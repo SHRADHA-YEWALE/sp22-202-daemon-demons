@@ -1,4 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import java.lang.Math;
 
 /**
  * Write a description of class Jet here.
@@ -23,6 +24,25 @@ public class Jet extends Actor
         if(Greenfoot.isKeyDown("right")){
             turn(turnSpeed);
         }
+        if(Greenfoot.isKeyDown("up")){
+            shoot();
+        }
         move(mvmntSpeed);
+    }
+    
+    public void shoot() {
+        Bullet b = new Bullet();
+        b.setRotation(getRotation());
+        getWorld().addObject(b, (int)getBulletX(), (int)getBulletY());
+    }
+    
+    public double getBulletX() {
+        double radians = Math.toRadians(getRotation());
+        return (getImage().getWidth() / 2) * Math.cos(radians) + getX();
+    }
+    
+    public double getBulletY() {
+        double radians = Math.toRadians(getRotation());
+        return (getImage().getWidth() / 2) * Math.sin(radians) + getY();
     }
 }
