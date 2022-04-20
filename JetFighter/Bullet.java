@@ -9,6 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Bullet extends Actor
 {
     private int speed = 6;
+    private int range = 100;
     
     public Bullet() {
     }
@@ -24,5 +25,15 @@ public class Bullet extends Actor
     public void act()
     {
         move(speed);
+        countdown();
+    }
+    
+    public void countdown() {
+        if (range <= 0 ) {
+            getWorld().removeObject(this);
+        }
+        else {
+            range = range - 1;
+        }
     }
 }
