@@ -13,3 +13,22 @@
 
 ### Blockers
 * No blockers
+
+### XP Value: Respect
+Everyone so far has been respectful in eveything that they had done. We talked as a team and was always open to the input of others. No one was disrespectful in the manner of speaking.
+
+## Week 2 (April 17th to April 23th)
+
+### Completed
+* Plane movement
+* Shooting
+* Bullet despawn
+* Bullet wrapping
+
+### Current Work
+* 
+
+### Blockers
+* 
+
+### XP Value: Respect
