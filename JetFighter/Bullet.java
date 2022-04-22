@@ -26,6 +26,7 @@ public class Bullet extends Actor
     {
         move(speed);
         countdown();
+        wrap();
     }
     
     public void countdown() {
@@ -36,4 +37,17 @@ public class Bullet extends Actor
             range = range - 1;
         }
     }
+    
+    public boolean inBounds() {
+        World world = getWorld();
+        if(getY() == world.getHeight() - 1 || getY() == 0 || getX() == world.getWidth() - 1 || getX() == 0)
+            return false;
+        return true;
+    }
+    
+    public void wrap() {
+        if(!inBounds())
+            getWorld().removeObject(this);
+    }
+    
 }
