@@ -21,7 +21,7 @@ public class DetectHit extends Actor implements IDetectHitSubject
     }
     
     public void setHitJet(Jet jet) {
-        hitJet = jet;
+        this.hitJet = jet;
         notifyObservers();
     }
     
