@@ -35,19 +35,22 @@ Then we started list down all the tasks needed and what all design patterns we c
 Based on team's feedback, we listed down all the tasks. Now its time to distribute the tasks amongselves. As I was promoting the xp value: Feedback, I analysed all tasks, the requirements, additional functionalities and provided the feedback along with design patterns we can implement. I made sure to take feedback from every team member about the tasks they want to pick. We distributed all the tasks and design patterns to implement among all team members.
 
 
-## Week 2 (April 10th to April 16th)
+## Week 2 (April 17th to April 23rd)
 
 ### Finished last week
+* Task 1 : Detect Hit
+* Task 2 : Score Card
 
 
 ### Time spend
-
+* Task 1 : 5 hrs
+* Task 2: 5 hrs
 
 ### Planned next week
 
 
 ### Bloker
-
+No blockers
 
 
 ## Week 3 (April 10th to April 16th)
