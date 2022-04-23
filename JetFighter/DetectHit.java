@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class DetectHit extends Actor implements IDetectHitSubject
 {
     private IUpdateScoreObserver observer;
-    private Jet hitJet;
+    private String hitJet;
     private ArrayList<IUpdateScoreObserver> observers = new ArrayList<>();
     
     /**
@@ -23,12 +23,12 @@ public class DetectHit extends Actor implements IDetectHitSubject
     }
 
     
-    public void setHitJet(Jet jet) {
+    public void setHitJet(String jet) {
         this.hitJet = jet;
         notifyObservers();
     }
     
-    public Jet getHitJet() {
+    public String getHitJet() {
         return hitJet;
     }
     
