@@ -1,10 +1,6 @@
 #BlueJ class context
 comment0.target=IDetectHitSubject
-comment0.text=\n\ Write\ a\ description\ of\ class\ IDetectHitSubject\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ IDetectHitSubject\ interface\ declare\ methods\ to\ attach\ update\ score\ observer\ and\n\ notify\ observer\ when\ detect\ hit.\n\ \n\ @author\ (shradha\ yewale)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=
-comment1.target=IDetectHitSubject()
-comment1.text=\n\ Constructor\ for\ objects\ of\ class\ IDetectHitSubject\n
-comment2.params=y
-comment2.target=int\ sampleMethod(int)
-comment2.text=\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\n\ \n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\n\ @return\ \ \ \ \ the\ sum\ of\ x\ and\ y\ \n
-numComments=3
+comment1.target=void\ notifyObservers()
+numComments=2
