@@ -1,12 +1,12 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class JetOneScore here.
+ * Write a description of class JetTwoScore here.
  * 
- * @author (shradha yewale) 
+ * @author (your name) 
  * @version (a version number or a date)
  */
-public class JetOneScore extends ScoreCard
+public class JetTwoScore extends ScoreCard
 {
     private int score = 0;
     /**
@@ -18,15 +18,13 @@ public class JetOneScore extends ScoreCard
         // Add your action code here.
     }
     
-    public JetOneScore(DetectHit detectHit) {
+    public JetTwoScore(DetectHit detectHit) {
         super(detectHit);
     }
     
     public void update() {
-        if(detectHit.getHitJet().equalsIgnoreCase("Jet1")) {
+        if(detectHit.getHitJet().equalsIgnoreCase("Jet2")) {
             score = score + 1;    
         }
     }
-    
-    
 }
