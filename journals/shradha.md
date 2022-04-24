@@ -57,6 +57,8 @@ No blockers
 ### XP Value : Team Feedback
 After dividing the tasks and reponsibilities, we have started implementing the assigned features. I started desiging the skeleton for observer pattern for score module. While designing the classes, I communicated with Dylan and took his feedback since our modules are interconnected and need to be integrated later. Moreover, We decided to make separate git branches and then create pull request to main branch after done with feature work to merge the working code to main branch so that main branch should have working up to date code. I created separate branches for my journal as well my feature score. I learnt git, greenfoot and also updated progress of my tasks in git.
 
+Also, we all team members worked on designing the architecutre diagram for the project by collaborating and taking feedback from each memeber on respective functionalities.
+
 ## Week 3 (April 10th to April 16th)
 
 ### Finished last week
