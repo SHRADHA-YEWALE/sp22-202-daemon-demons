@@ -23,13 +23,18 @@ Each team member was encouraged to freely communicate their ideas without any he
 ## Week 2 (April 17th - April 23rd)
 
 ### Tasks worked on
-
+* Worked on the Architecture diagram
+* Display the settings screen
+* Fixed bugs in the main menu
+* Updated components in the settings screen
 
 ### Tasks planned
-
+* Complete the settings screen integration with the menu screen
+* Finish the UI wireframe diagram
+* Use the command pattern for the menu screen
 
 ### Blockers
-
+* None
 
 ### XP value - Communication
-
+Every team member was asked his opinion/ideas on the progress of the project so far. Each of us communicated our ideas on how to increase the scope of the project and whether the time left for the project was enough to introduce more components in the project. The team was encouraged to communicate their thoughts on incorpprating more design patterns in the project and everyone worked together to complete the architecture diagram. The next meeting tasks and agenda were also communicated effectively with the team and members were encouraged to ask their doubts/members without hesitation.
