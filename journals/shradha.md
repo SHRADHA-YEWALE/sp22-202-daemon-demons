@@ -15,7 +15,6 @@ Core XP value : **Feedback**
 * Task 4 : Learning greenfoot
 
 ### Time spend
-
 * Task 1 : 2 hrs
 * Task 2 : 4 hrs
 * Task 3 : 2 hrs
@@ -28,7 +27,7 @@ Core XP value : **Feedback**
 ### Blocker
 No Blocker
 
-### Team Feedback
+### XP Value : Team Feedback
 We team members had our 1st meeting in the 1st week. Every team member were exploring the project topic ideas. After having lots of analysis and getting feedback from every team member, we ended up by selecting 2 games. Now, its time to select the one out of 2 games. We again started discussion to decide which game will best suited with our requirements. Everyone has given their feedback of what they feel will be the feasible with our requirements.
 Our next discussion topic was to decide which technology to use to implement it. After getting feedback from every team memeber, we decided to use java as it will be the efficient to implement design patterns. 
 Then we started list down all the tasks needed and what all design patterns we can implement in this game. Before taking any decision, we were taking feedback from each and every team member. 
@@ -38,20 +37,25 @@ Based on team's feedback, we listed down all the tasks. Now its time to distribu
 ## Week 2 (April 17th to April 23rd)
 
 ### Finished last week
-* Task 1 : Detect Hit
-* Task 2 : Score Card
+* Task 1 : Design skeleton for obverver pattern
+* Task 2 : Detect Hit
+* Task 3 : Score Card
 
 
 ### Time spend
-* Task 1 : 5 hrs
-* Task 2: 5 hrs
+* Task 1 : 4 hrs
+* Task 2: 3 hrs
+* Task 3 : 3 hrs
 
 ### Planned next week
-
+* Task 1 : Integrate detect hit with Jet
+* Task 2 : Display scores for jet1 and jet 2
 
 ### Bloker
 No blockers
 
+### XP Value : Team Feedback
+After dividing the tasks and reponsibilities, we have started implementing the assigned features. I started desiging the skeleton for observer pattern for score module. While designing the classes, I communicated with Dylan and took his feedback since our modules are interconnected and need to be integrated later. Moreover, We decided to make separate git branches and then create pull request to main branch after done with feature work to merge the working code to main branch so that main branch should have working up to date code. I created separate branches for my journal as well my feature score. I learnt git, greenfoot and also updated progress of my tasks in git.
 
 ## Week 3 (April 10th to April 16th)
 
