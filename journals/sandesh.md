@@ -21,15 +21,21 @@ Everyone showed courage by bringing new game ideas into the discussion. Everyone
 ## Week 2 (April 17th to April 23rd)
 
 ### Tasks worked on
-
+* Asset creation - Jet
+* Asset creation - Missile
+* Discuss technical architecture of the game
+* Discuss UI layout of game
 
 ### Tasks planned
-
+* Create architecture diagram
+* Create UI wireframes
+* Game initialisation
 
 ### Blockers
-
+* None
 
 ### XP value - Courage
+Team members showed courage by quickly learning Greenfoot and getting started with the development of the game. Team has been keeping with the timeline and continuously challenging themselves to implement the project. 
 
 ## Week 3 (April 23rd to April 30th)
 
