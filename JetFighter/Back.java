@@ -15,6 +15,7 @@ public class Back extends GameSettingsOptions
     }
     public void act()
     {
-    
+        checkMouse();
+        goBack(new MenuScreen());
     }
 }
