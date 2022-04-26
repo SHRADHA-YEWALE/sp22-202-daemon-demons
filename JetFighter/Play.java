@@ -19,5 +19,6 @@ public class Play extends MenuOptions
     public void act()
     {
         checkMouse();
+        transitionWorld(new GameScreen());
     }
 }
