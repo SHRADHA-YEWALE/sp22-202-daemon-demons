@@ -8,12 +8,17 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Settings extends MenuOptions
 {
-    /**
-     * Act - do whatever the Settings wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+       public Settings(){
+        GreenfootImage settingsButton =  new GreenfootImage(165,115);
+        Font adjustedFont = new Font(true, false, 40);
+        settingsButton.setFont(adjustedFont);
+        settingsButton.setColor(Color.WHITE);
+        settingsButton.drawString("Settings", 0, 50);
+        setImage(settingsButton);
+    }
     public void act()
     {
-        
+        checkMouse();
+        transitionWorld(new GameSettingsScreen());
     }
 }
