@@ -8,12 +8,19 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Quit extends MenuOptions
 {
-    /**
-     * Act - do whatever the Quit wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+      public Quit(){
+        GreenfootImage quitButton =  new GreenfootImage(100,60);
+        Font adjustedFont = new Font(true, false, 50);
+        quitButton.setFont(adjustedFont);
+        quitButton.setColor(Color.WHITE);
+        quitButton.drawString("Quit", 0, 50);
+        setImage(quitButton);
+    }
     public void act()
     {
-        
-    }
+        checkMouse();
+        if(Greenfoot.mouseClicked(this)){
+            Greenfoot.stop();  // quits game
+        }
+    }  
 }
