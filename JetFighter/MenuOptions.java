@@ -24,10 +24,15 @@ public class MenuOptions extends Actor
         }
     }
     
+    public void transitionWorld(World world){
+        if(Greenfoot.mouseClicked(this)){
+            Greenfoot.setWorld(world);
+        }
+    }
+    
     public void adjustButtonTransparency(int adjustmentFactor){
         GreenfootImage tempImg = getImage();
         tempImg.setTransparency(adjustmentFactor);
         setImage(tempImg);
     }
-    
 }
