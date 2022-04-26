@@ -10,7 +10,7 @@ public class Quit extends MenuOptions
 {
       public Quit(){
         GreenfootImage quitButton =  new GreenfootImage(100,60);
-        Font adjustedFont = new Font(true, false, 50);
+        Font adjustedFont = new Font("Marlboro",true, false, 45);
         quitButton.setFont(adjustedFont);
         quitButton.setColor(Color.WHITE);
         quitButton.drawString("Quit", 0, 50);
@@ -20,7 +20,7 @@ public class Quit extends MenuOptions
     {
         checkMouse();
         if(Greenfoot.mouseClicked(this)){
-            Greenfoot.stop();  // quits game
+            System.exit(0);  // quits game
         }
     }  
 }

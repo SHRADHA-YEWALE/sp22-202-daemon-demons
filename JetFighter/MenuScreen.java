@@ -19,6 +19,7 @@ public class MenuScreen extends World
         super(600, 400, 1); 
         prepare();
     }
+    
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
@@ -27,6 +28,15 @@ public class MenuScreen extends World
     {
         Play play = new Play();
         addObject(play,259,160);
+        play.setLocation(273,201);
+
+        Quit quit = new Quit();
+        addObject(quit,252,340);
+        quit.setLocation(269,334);
+
+        Settings settings = new Settings();
+        addObject(settings,240,278);
+        settings.setLocation(284,296);
     }
 }
 
