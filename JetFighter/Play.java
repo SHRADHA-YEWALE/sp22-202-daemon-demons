@@ -8,12 +8,16 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Play extends MenuOptions
 {
-    /**
-     * Act - do whatever the Play wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    public Play(){
+        GreenfootImage playButton =  new GreenfootImage(100,60);
+        Font adjustedFont = new Font(true, false, 50);
+        playButton.setFont(adjustedFont);
+        playButton.setColor(Color.WHITE);
+        playButton.drawString("Play", 0, 50);
+        setImage(playButton);
+    }
     public void act()
     {
-        // Add your action code here.
+        checkMouse();
     }
 }

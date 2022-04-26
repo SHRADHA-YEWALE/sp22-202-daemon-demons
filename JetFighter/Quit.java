@@ -14,6 +14,6 @@ public class Quit extends MenuOptions
      */
     public void act()
     {
-        // Add your action code here.
+        
     }
 }
