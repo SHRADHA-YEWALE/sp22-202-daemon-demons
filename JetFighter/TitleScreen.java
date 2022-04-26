@@ -23,12 +23,15 @@ public class TitleScreen extends World
     private void prepare(){ 
         TitleLetters titleLetters = new TitleLetters(); 
         addObject(titleLetters, 200, 200); 
+        titleLetters.setLocation(250,190);
+        
     }
     
     public void act(){ 
         if("enter".equals(Greenfoot.getKey())){
             Greenfoot.setWorld(new MenuScreen());
         }
+        
     } 
 
 }

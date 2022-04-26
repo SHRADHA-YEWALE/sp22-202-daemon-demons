@@ -29,4 +29,5 @@ public class MenuOptions extends Actor
         tempImg.setTransparency(adjustmentFactor);
         setImage(tempImg);
     }
+    
 }
