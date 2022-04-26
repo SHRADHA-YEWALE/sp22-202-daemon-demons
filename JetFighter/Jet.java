@@ -9,12 +9,23 @@ import java.lang.Math;
  */
 public class Jet extends Actor
 {
+    private IMovementStrategy strat;
     private int mvmntSpeed = 4;
     private int turnSpeed = 3;
+    private Jet jet = this;
     
     public enum BOUNDS{
         IN_BOUNDS, TOP, RIGHT, BOTTOM, LEFT
     };
+    
+    public Jet(int mode) {
+        if (mode == 0) {
+            strat = getArrowStrat();
+        }
+        else {
+            strat = getWADStrat();
+        }
+    }
     
     /**
      * Act - do whatever the Jet wants to do. This method is called whenever
@@ -22,16 +33,9 @@ public class Jet extends Actor
      */
     public void act()
     {
-        if(Greenfoot.isKeyDown("left")){
-            turn(-1 * turnSpeed);
-        }
-        if(Greenfoot.isKeyDown("right")){
-            turn(turnSpeed);
-        }
-        if(Greenfoot.isKeyDown("up")){
-            shoot();
-        }
-        move(mvmntSpeed);
+        strat.turn();
+        strat.shoot();
+        strat.move();
         wrap();
     }
     
@@ -73,5 +77,53 @@ public class Jet extends Actor
             case BOTTOM: setLocation(getX(), 1); break;
             case LEFT: setLocation(world.getWidth() - 2, getY()); break;
         }
+    }
+    
+    public IMovementStrategy getArrowStrat() {
+        IMovementStrategy strat = new IMovementStrategy(){
+            public void move() {
+                jet.move(mvmntSpeed);
+            }
+            
+            public void turn() {
+                if(Greenfoot.isKeyDown("left")){
+                    jet.turn(-1 * turnSpeed);
+                }
+                if(Greenfoot.isKeyDown("right")){
+                    jet.turn(turnSpeed);
+                }
+            }
+            
+            public void shoot() {
+                if(Greenfoot.isKeyDown("up")){
+                    jet.shoot();
+                }
+            }
+        };
+        return strat;
+    }
+    
+    public IMovementStrategy getWADStrat() {
+        IMovementStrategy strat = new IMovementStrategy(){
+            public void move() {
+                jet.move(mvmntSpeed);
+            }
+            
+            public void turn() {
+                if(Greenfoot.isKeyDown("A")){
+                    jet.turn(-1 * turnSpeed);
+                }
+                if(Greenfoot.isKeyDown("D")){
+                    jet.turn(turnSpeed);
+                }
+            }
+            
+            public void shoot() {
+                if(Greenfoot.isKeyDown("W")){
+                    jet.shoot();
+                }
+            }
+        };
+        return strat;
     }
 }
