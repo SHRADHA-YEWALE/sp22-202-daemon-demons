@@ -15,11 +15,12 @@ public class JetOneScore extends ScoreCard
      */
     public void act()
     {
-        // Add your action code here.
+        setImage(new GreenfootImage("Score:" + score,50, Color.GREEN,Color.BLACK));
     }
     
     public JetOneScore(DetectHit detectHit) {
         super(detectHit);
+        setImage(new GreenfootImage("Score:" + score,50, Color.GREEN,Color.BLACK));
     }
     
     public void update() {

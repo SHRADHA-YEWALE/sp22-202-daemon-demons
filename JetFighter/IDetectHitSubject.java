@@ -7,6 +7,6 @@
  */
 public interface IDetectHitSubject  
 {
-    public abstract void attach(IUpdateScoreObserver observer);
+    //public abstract void attach(IUpdateScoreObserver observer);
     public void notifyObservers();
 }

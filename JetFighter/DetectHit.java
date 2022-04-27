@@ -11,6 +11,7 @@ public class DetectHit extends Actor implements IDetectHitSubject
 {
     private IUpdateScoreObserver observer;
     private String hitJet;
+    private Jet jet;
     private ArrayList<IUpdateScoreObserver> observers = new ArrayList<>();
     
     /**
@@ -22,7 +23,7 @@ public class DetectHit extends Actor implements IDetectHitSubject
         // Add your action code here.
     }
 
-    
+   
     public void setHitJet(String jet) {
         this.hitJet = jet;
         notifyObservers();
