@@ -7,7 +7,7 @@ import java.lang.Math;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Jet extends Actor
+public class Jet extends Actor implements IDetectHitSubject
 {
     private IMovementStrategy strat;
     private int mvmntSpeed = 4;
@@ -125,5 +125,9 @@ public class Jet extends Actor
             }
         };
         return strat;
+    }
+    
+    public void notifyObservers() {
+        //do nothing
     }
 }
