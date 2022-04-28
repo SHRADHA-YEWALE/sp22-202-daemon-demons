@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=IDetectHitSubject
-comment0.text=\r\n\ IDetectHitSubject\ interface\ declare\ methods\ to\ attach\ update\ score\ observer\ and\r\n\ notify\ observer\ when\ detect\ hit.\r\n\ \r\n\ @author\ (shradha\ yewale)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\n\ IDetectHitSubject\ interface\ declare\ methods\ to\ attach\ update\ score\ observer\ and\n\ notify\ observer\ when\ detect\ hit.\n\ \n\ @author\ (shradha\ yewale)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=observer
 comment1.target=void\ attach(IUpdateScoreObserver)
 comment2.params=
