@@ -8,7 +8,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class JetOneScore extends ScoreCard
 {
-    private int score = 0;
+    private static int score = 0;
+    private static JetOneScore jetOneScore;
+    
     /**
      * Act - do whatever the JetOneScore wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -18,14 +20,23 @@ public class JetOneScore extends ScoreCard
         // Add your action code here.
     }
     
-    public JetOneScore(DetectHit detectHit) {
-        super(detectHit);
+    public static JetOneScore getScoreInstance() {
+        if(jetOneScore == null) {
+            return new JetOneScore();
+        }
+        return jetOneScore;
     }
     
-    public void update() {
-        if(detectHit.getHitJet().equalsIgnoreCase("Jet1")) {
-            score = score + 1;    
-        }
+    public void setScore() {
+        score += 1;
+    }
+
+    public int getScore() {
+        return score;
+    }
+    
+    public void updateScore() {
+        JetOneScore.getScoreInstance().setScore();   
     }
     
     
