@@ -6,8 +6,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Jet2 extends Jet
+public class Jet2 extends Jet implements IDetectHitSubject
 {
+    public void act() {
+        if(isTouching(Bullet1.class)) {
+            notifyObservers();
+        }
+    }
+    
     public Jet2(int mode) {
         super(mode);
     }
@@ -16,5 +22,10 @@ public class Jet2 extends Jet
         Bullet2 b = new Bullet2();
         b.setRotation(getRotation());
         getWorld().addObject(b, (int)super.getBulletX(), (int)super.getBulletY());
+    }
+    
+    public void notifyObservers() {
+        //notify observer to update the score of jet1
+        JetOneScore.getScoreInstance().updateScore();
     }
 }

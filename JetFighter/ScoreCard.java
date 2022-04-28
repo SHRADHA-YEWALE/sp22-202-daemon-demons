@@ -8,12 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class ScoreCard extends Actor implements IUpdateScoreObserver
 {
-    
-    protected DetectHit detectHit;
-    
-    public ScoreCard(DetectHit detectHit) {
-        this.detectHit = detectHit;
-    }
+    private static ScoreCard instance;
     
     
     /**
@@ -26,6 +21,6 @@ public class ScoreCard extends Actor implements IUpdateScoreObserver
     }
     
     public void updateScore() {
-        //update scor
+        //update score
     }
 }
