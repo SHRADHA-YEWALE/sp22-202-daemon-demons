@@ -26,5 +26,6 @@ public class Jet2 extends Jet implements IDetectHitSubject
     
     public void notifyObservers() {
         //notify observer to update the score of jet1
+        JetOneScore.getScoreInstance().updateScore();
     }
 }
