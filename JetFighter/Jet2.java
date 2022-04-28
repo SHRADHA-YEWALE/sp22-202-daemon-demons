@@ -9,6 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Jet2 extends Jet implements IDetectHitSubject
 {
     public void act() {
+        super.act();
         if(isTouching(Bullet1.class)) {
             notifyObservers();
         }
@@ -18,8 +19,12 @@ public class Jet2 extends Jet implements IDetectHitSubject
         super(mode);
     }
     
+    public Jet2(int mode, int mvmntSpeed, int bulletSpeed) {
+        super(mode, mvmntSpeed, bulletSpeed);
+    }
+    
     public void shoot() {
-        Bullet2 b = new Bullet2();
+        Bullet2 b = new Bullet2(super.getBulletSpeed());
         b.setRotation(getRotation());
         getWorld().addObject(b, (int)super.getBulletX(), (int)super.getBulletY());
     }

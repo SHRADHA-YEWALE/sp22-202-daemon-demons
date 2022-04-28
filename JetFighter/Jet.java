@@ -12,6 +12,7 @@ public class Jet extends Actor implements IDetectHitSubject
     private IMovementStrategy strat;
     private int mvmntSpeed = 4;
     private int turnSpeed = 3;
+    private int bulletSpeed = 6;
     private Jet jet = this;
     
     public enum BOUNDS{
@@ -19,6 +20,18 @@ public class Jet extends Actor implements IDetectHitSubject
     };
     
     public Jet(int mode) {
+        if (mode == 0) {
+            strat = getArrowStrat();
+        }
+        else {
+            strat = getWADStrat();
+        }
+    }
+    
+    public Jet(int mode, int mvmntSpeed, int bulletSpeed) {
+        this.mvmntSpeed = mvmntSpeed;
+        turnSpeed = mvmntSpeed - 1;
+        this.bulletSpeed = bulletSpeed;
         if (mode == 0) {
             strat = getArrowStrat();
         }
@@ -40,7 +53,7 @@ public class Jet extends Actor implements IDetectHitSubject
     }
     
     public void shoot() {
-        Bullet b = new Bullet();
+        Bullet b = new Bullet(bulletSpeed);
         b.setRotation(getRotation());
         getWorld().addObject(b, (int)getBulletX(), (int)getBulletY());
     }
@@ -129,5 +142,9 @@ public class Jet extends Actor implements IDetectHitSubject
     
     public void notifyObservers() {
         //do nothing
+    }
+    
+    public int getBulletSpeed() {
+        return bulletSpeed;
     }
 }
