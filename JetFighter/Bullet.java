@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Bullet extends Actor
 {   
     private int speed = 6;
-    private int range = 100;
+    private int range = 600;
     
     public enum BOUNDS{
         IN_BOUNDS, TOP, RIGHT, BOTTOM, LEFT
@@ -20,6 +20,7 @@ public class Bullet extends Actor
     
     public Bullet(int speed) {
         this.speed = speed;
+        range = range / speed;
     }
     
     /**
