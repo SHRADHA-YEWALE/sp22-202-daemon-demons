@@ -22,7 +22,7 @@ public class JetOneScoreDisplay extends Actor
         // Add your action code here.
     }
     
-    public static ScoreCardDisplay getInstance() {
+    public static JetOneScoreDisplay getInstance() {
         if (jetOneScoreDisplayInstance == null) {
             jetOneImage.scale(30, 30);
             jetOneScoreDisplayInstance = new JetOneScoreDisplay(JetOneScore.getScoreInstance().getScore(), jetOneImage);
@@ -42,6 +42,10 @@ public class JetOneScoreDisplay extends Actor
         backgroundImage.drawImage(jetOneScoreText, 20, 70);
         backgroundImage.scale(150, 75);
         setImage(backgroundImage);
+    }
+    
+    public void updateScoreDisplay() {
+        displayScore(JetOneScore.getScoreInstance().getScore(), jetOneImage);
     }
         
 }

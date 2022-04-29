@@ -22,7 +22,7 @@ public class JetTwoScoreDisplay extends Actor
         // Add your action code here.
     }
     
-    public static ScoreCardDisplay getInstance() {
+    public static JetTwoScoreDisplay getInstance() {
         if (jetTwoScoreDisplayInstance == null) {
             jetTwoImage.scale(30, 30);
             jetTwoScoreDisplayInstance = new JetTwoScoreDisplay(JetTwoScore.getScoreInstance().getScore(), jetTwoImage);
@@ -37,10 +37,14 @@ public class JetTwoScoreDisplay extends Actor
     
     public void displayScore(int score, GreenfootImage jetTwoImage) {
         backgroundImage = getImage();
-        jetTwoScoreText = new GreenfootImage("Jet2 Score : " + score, 25, Color.WHITE, Color.BLACK);
+        jetTwoScoreText = new GreenfootImage("Jet2 Scaore : " + score, 25, Color.WHITE, Color.BLACK);
         backgroundImage.drawImage(jetTwoImage, 15, 20);
         backgroundImage.drawImage(jetTwoScoreText, 50, 70);
         backgroundImage.scale(150, 75);
         setImage(backgroundImage);
+    }
+    
+    public void updateScoreDisplay() {
+        displayScore(JetTwoScore.getScoreInstance().getScore(), jetTwoImage);
     }
 }
