@@ -43,5 +43,9 @@ public class JetOneScoreDisplay extends Actor
         backgroundImage.scale(150, 75);
         setImage(backgroundImage);
     }
+    
+    public void updateScoreDisplay() {
+        displayScore(JetOneScore.getScoreInstance().getScore(), jetOneImage);
+    }
         
 }
