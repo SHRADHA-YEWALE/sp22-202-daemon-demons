@@ -22,9 +22,17 @@ Shradha Yewale
 
 ## Architecture Diagram
 
-![](JetFighter/images/diagram/Architecture_diagram.png)
+![](documentation/diagram/Architecture_diagram.png)
 
 ## Wireframes
+
+| Screen  | Wireframe |
+| ------------- | ------------- |
+| Homescreen  | ![](documentation/wireframes/1-Homepage-2x.png)  |
+| Menu  | ![](documentation/wireframes/2-Menu-2x.png)  |
+| Settings | ![](documentation/wireframes/3-Settings-2x.png) |
+| Game | ![](documentation/wireframes/4-Game-2x.png) |
+| Post Game | ![](documentation/wireframes/5-Post_Game-2x.png) | 
 
 ## Key Features
 
