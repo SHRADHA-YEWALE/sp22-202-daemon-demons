@@ -22,6 +22,8 @@ Shradha Yewale
 
 ## Architecture Diagram
 
+![](JetFighter/images/diagram/Architecture_diagram.png)
+
 ## Wireframes
 
 ## Key Features
