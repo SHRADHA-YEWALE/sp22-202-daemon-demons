@@ -9,10 +9,12 @@ import java.lang.Math;
  */
 public class Jet extends Actor implements IDetectHitSubject
 {
+    private static final int SHOOTING_COOLDOWN = 50;
     private IMovementStrategy strat;
     private int mvmntSpeed = 4;
     private int turnSpeed = 3;
     private int bulletSpeed = 6;
+    private int cooldown = 0;
     private Jet jet = this;
     
     public enum BOUNDS{
@@ -49,7 +51,13 @@ public class Jet extends Actor implements IDetectHitSubject
     public void act()
     {
         strat.turn();
-        strat.shoot();
+        if (cooldown == 0){
+            strat.shoot();
+            cooldown = SHOOTING_COOLDOWN;
+        }
+        else{
+           cooldown = cooldown - 1; 
+        }
         strat.move();
         wrap();
         JetOneScoreDisplay.getInstance().updateScoreDisplay();
