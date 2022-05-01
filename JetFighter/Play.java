@@ -12,7 +12,7 @@ public class Play extends MenuOptions
         GreenfootImage playButton =  new GreenfootImage(100,60);
         Font adjustedFont = new Font(true, false, 45);
         playButton.setFont(adjustedFont);
-        playButton.setColor(Color.WHITE);
+        playButton.setColor(Color.LIGHT_GRAY);
         playButton.drawString("Play", 0, 50);
         setImage(playButton);
     }

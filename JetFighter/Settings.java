@@ -12,7 +12,7 @@ public class Settings extends MenuOptions
         GreenfootImage settingsButton =  new GreenfootImage(165,115);
         Font adjustedFont = new Font(true, false, 40);
         settingsButton.setFont(adjustedFont);
-        settingsButton.setColor(Color.WHITE);
+        settingsButton.setColor(Color.LIGHT_GRAY);
         settingsButton.drawString("Settings", 0, 50);
         setImage(settingsButton);
     }
