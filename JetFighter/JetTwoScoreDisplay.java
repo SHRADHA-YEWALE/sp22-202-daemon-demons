@@ -11,7 +11,9 @@ public class JetTwoScoreDisplay extends Actor
     private static JetTwoScoreDisplay jetTwoScoreDisplayInstance;
     GreenfootImage backgroundImage;
     GreenfootImage jetTwoScoreText;
-    private static GreenfootImage jetTwoImage = new GreenfootImage("jet_white.png");
+    private static GreenfootImage jetTwoImage = new GreenfootImage("BackgroundScoreImage.jpeg");
+    private static final Color transparent = new Color(0, 0, 0, 0);
+
 
     /**
      * Act - do whatever the JetTwoScoreDisplay wants to do. This method is called whenever
@@ -20,6 +22,7 @@ public class JetTwoScoreDisplay extends Actor
     public void act()
     {
         // Add your action code here.
+
     }
     
     public static JetTwoScoreDisplay getInstance() {
@@ -35,9 +38,11 @@ public class JetTwoScoreDisplay extends Actor
         displayScore(score, jetTwoImage);
     }
     
+    public JetTwoScoreDisplay() {}
+    
     public void displayScore(int score, GreenfootImage jetTwoImage) {
         backgroundImage = getImage();
-        jetTwoScoreText = new GreenfootImage("Jet2 Scaore : " + score, 25, Color.WHITE, Color.BLACK);
+        jetTwoScoreText = new GreenfootImage("Jet2 Scaore : " + score, 25, Color.BLACK,transparent);
         backgroundImage.drawImage(jetTwoImage, 15, 20);
         backgroundImage.drawImage(jetTwoScoreText, 50, 70);
         backgroundImage.scale(150, 75);

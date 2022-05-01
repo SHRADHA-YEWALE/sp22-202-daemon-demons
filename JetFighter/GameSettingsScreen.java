@@ -15,7 +15,7 @@ public class GameSettingsScreen extends World
      */
     public GameSettingsScreen()
     {    
-        super(600, 400, 1); 
+        super(900, 650, 1); 
         prepare();
     }
     /**

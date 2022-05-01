@@ -18,6 +18,7 @@ public class JetOneScore extends ScoreCard
     public void act()
     {
         // Add your action code here.
+        updateScore();
     }
     
     public static JetOneScore getScoreInstance() {

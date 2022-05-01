@@ -52,6 +52,9 @@ public class Jet extends Actor implements IDetectHitSubject
         strat.shoot();
         strat.move();
         wrap();
+        JetOneScoreDisplay.getInstance().updateScoreDisplay();
+        JetTwoScoreDisplay.getInstance().updateScoreDisplay();
+
     }
     
     public void shoot() {
