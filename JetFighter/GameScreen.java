@@ -18,6 +18,9 @@ public class GameScreen extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(900, 650, 1); 
         
+        TimerDisplay timer = new TimerDisplay();
+        addObject(timer, 450, 40);
+        
         Jet jet1 = new Jet1(0);
         addObject(jet1, 100, 325);
         
