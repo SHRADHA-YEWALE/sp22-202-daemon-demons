@@ -7,14 +7,38 @@ import java.lang.Math;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Jet extends Actor
+public class Jet extends Actor implements IDetectHitSubject
 {
+    private IMovementStrategy strat;
     private int mvmntSpeed = 4;
     private int turnSpeed = 3;
+    private int bulletSpeed = 6;
+    private Jet jet = this;
     
     public enum BOUNDS{
         IN_BOUNDS, TOP, RIGHT, BOTTOM, LEFT
     };
+    
+    public Jet(int mode) {
+        if (mode == 0) {
+            strat = getArrowStrat();
+        }
+        else {
+            strat = getWADStrat();
+        }
+    }
+    
+    public Jet(int mode, int mvmntSpeed, int bulletSpeed) {
+        this.mvmntSpeed = mvmntSpeed;
+        turnSpeed = mvmntSpeed - 1;
+        this.bulletSpeed = bulletSpeed;
+        if (mode == 0) {
+            strat = getArrowStrat();
+        }
+        else {
+            strat = getWADStrat();
+        }
+    }
     
     /**
      * Act - do whatever the Jet wants to do. This method is called whenever
@@ -22,21 +46,14 @@ public class Jet extends Actor
      */
     public void act()
     {
-        if(Greenfoot.isKeyDown("left")){
-            turn(-1 * turnSpeed);
-        }
-        if(Greenfoot.isKeyDown("right")){
-            turn(turnSpeed);
-        }
-        if(Greenfoot.isKeyDown("up")){
-            shoot();
-        }
-        move(mvmntSpeed);
+        strat.turn();
+        strat.shoot();
+        strat.move();
         wrap();
     }
     
     public void shoot() {
-        Bullet b = new Bullet();
+        Bullet b = new Bullet(bulletSpeed);
         b.setRotation(getRotation());
         getWorld().addObject(b, (int)getBulletX(), (int)getBulletY());
     }
@@ -73,5 +90,61 @@ public class Jet extends Actor
             case BOTTOM: setLocation(getX(), 1); break;
             case LEFT: setLocation(world.getWidth() - 2, getY()); break;
         }
+    }
+    
+    public IMovementStrategy getArrowStrat() {
+        IMovementStrategy strat = new IMovementStrategy(){
+            public void move() {
+                jet.move(mvmntSpeed);
+            }
+            
+            public void turn() {
+                if(Greenfoot.isKeyDown("left")){
+                    jet.turn(-1 * turnSpeed);
+                }
+                if(Greenfoot.isKeyDown("right")){
+                    jet.turn(turnSpeed);
+                }
+            }
+            
+            public void shoot() {
+                if(Greenfoot.isKeyDown("up")){
+                    jet.shoot();
+                }
+            }
+        };
+        return strat;
+    }
+    
+    public IMovementStrategy getWADStrat() {
+        IMovementStrategy strat = new IMovementStrategy(){
+            public void move() {
+                jet.move(mvmntSpeed);
+            }
+            
+            public void turn() {
+                if(Greenfoot.isKeyDown("A")){
+                    jet.turn(-1 * turnSpeed);
+                }
+                if(Greenfoot.isKeyDown("D")){
+                    jet.turn(turnSpeed);
+                }
+            }
+            
+            public void shoot() {
+                if(Greenfoot.isKeyDown("W")){
+                    jet.shoot();
+                }
+            }
+        };
+        return strat;
+    }
+    
+    public void notifyObservers() {
+        //do nothing
+    }
+    
+    public int getBulletSpeed() {
+        return bulletSpeed;
     }
 }
