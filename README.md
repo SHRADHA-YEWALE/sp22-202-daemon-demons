@@ -22,9 +22,13 @@ Shradha Yewale
 
 ## Architecture Diagram
 
+[Lucid chart](https://lucid.app/lucidchart/8a2b83f8-d4c5-4b58-b0b7-eb1032640ead/edit?invitationId=inv_16fc3e19-db7b-4333-bfc4-c52e307b5293)
+
 ![](documentation/diagram/Architecture_diagram.png)
 
 ## Wireframes
+
+[Wireframes](https://wireframe.cc/pro/pp/02d102965543343)
 
 | Screen  | Wireframe |
 | ------------- | ------------- |
@@ -35,5 +39,8 @@ Shradha Yewale
 | Post Game | ![](documentation/wireframes/5-Post_Game-2x.png) | 
 
 ## Key Features
+
+
+
 
 

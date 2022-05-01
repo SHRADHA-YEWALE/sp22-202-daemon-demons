@@ -16,11 +16,13 @@ public class Bullet extends Actor
     };
     
     public Bullet() {
+        scale();
     }
     
     public Bullet(int speed) {
         this.speed = speed;
         range = range / speed;
+        scale();
     }
     
     public static int getSpeed(){
@@ -74,6 +76,11 @@ public class Bullet extends Actor
             case BOTTOM: setLocation(getX(), 1); break;
             case LEFT: setLocation(world.getWidth() - 2, getY()); break;
         }
+    }
+    
+    public void scale(){
+        GreenfootImage bulletImage = getImage();
+        bulletImage.scale(10, 10);
     }
     
 }
