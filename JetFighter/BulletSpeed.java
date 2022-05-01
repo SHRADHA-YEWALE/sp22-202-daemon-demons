@@ -8,12 +8,16 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class BulletSpeed extends GameSettingsOptions
 {
-    /**
-     * Act - do whatever the BulletSpeed wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    public BulletSpeed(){
+        GreenfootImage bulletSpeed =  new GreenfootImage(200,200);
+        Font adjustedFont = new Font(true, false, 30);
+        bulletSpeed.setFont(adjustedFont);
+        bulletSpeed.setColor(Color.LIGHT_GRAY);
+        bulletSpeed.drawString("Bullet Speed:", 0, 50);
+        setImage(bulletSpeed);
+    }
     public void act()
     {
-    
+        checkMouse();
     }
 }

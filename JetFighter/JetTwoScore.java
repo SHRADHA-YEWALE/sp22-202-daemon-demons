@@ -17,6 +17,7 @@ public class JetTwoScore extends ScoreCard
     public void act()
     {
         // Add your action code here.
+        super.act();
     }
     
     public static JetTwoScore getScoreInstance() {
