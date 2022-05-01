@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Bullet1
+comment0.text=\n\ Write\ a\ description\ of\ class\ Bullet1\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=Bullet1()
+comment2.params=speed
+comment2.target=Bullet1(int)
+numComments=3
