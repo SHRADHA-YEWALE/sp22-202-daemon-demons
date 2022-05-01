@@ -38,3 +38,23 @@ Each team member was encouraged to freely communicate their ideas without any he
 
 ### XP value - Communication
 Every team member was asked his opinion/ideas on the progress of the project so far. Each of us communicated our ideas on how to increase the scope of the project and whether the time left for the project was enough to introduce more components in the project. The team was encouraged to communicate their thoughts on incorpprating more design patterns in the project and everyone worked together to complete the architecture diagram. The next meeting tasks and agenda were also communicated effectively with the team and members were encouraged to ask their doubts/members without hesitation.
+
+## Week 3 (April 24th - April 30th)
+
+### Tasks worked on
+* Implemented the me screen
+* Added components for the settings screen
+* Fixed bugs in the game settings screen
+* Added transitions from menu screen to the game play screen
+
+### Tasks planned
+* Finish implementing the jet speed and bullet speed in settings screen
+* Complete the game settings screen implementation
+* Test different bullet speeds and jet speeds
+* Handle the menu items in the project using command pattern
+
+### Blockers
+* None
+
+### XP value - Communication
+Every team member has been openly communicating their ideas and concerns related to the project. In all the meetings so far, all team members have been communicating their tasks completed, tasks scheduled and blockers effectively. During the meeting, every team member was encorage to add ideas to increase the scope of the project and collaborate together to finish the remainings tasks. The next meeting tasks and agenda were also communicated effectively in this meeting.
