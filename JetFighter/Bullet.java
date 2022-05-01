@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Bullet extends Actor
 {   
-    private int speed = 6;
+    private static int speed = 6;
     private int range = 600;
     
     public enum BOUNDS{
@@ -25,6 +25,13 @@ public class Bullet extends Actor
         scale();
     }
     
+    public static int getSpeed(){
+        return speed;
+    }
+    
+    public void setSpeed(int speed){
+        this.speed = speed;
+    }
     /**
      * Act - do whatever the Bullet wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.

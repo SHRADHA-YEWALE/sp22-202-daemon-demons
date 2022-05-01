@@ -59,18 +59,30 @@ After dividing the tasks and reponsibilities, we have started implementing the a
 
 Also, we all team members worked on designing the architecutre diagram for the project by collaborating and taking feedback from each memeber on respective functionalities.
 
-## Week 3 (April 10th to April 16th)
+## Week 3 (April 24th to April 30th)
 
 ### Finished last week
+1. Observer pattern refactoring for score - 2hrs
+2. Jet1 & Jet2 as a concrete subject to detect hit - 1hr
+3. Update jet1 & jet2 score - 4hrs
+4. Display jet1 & jet 2 score - 4hrs
 
 ### Time spend
-
+* Task 1 : 2 hrs
+* Task 2: 1 hr
+* Task 3 : 4 hrs
+* Task 4 : 4 hrs
 
 
 ### Planned next week
+1. Integrating score feature with jets.
+2. Testing update, display score for jet1 & jet2
 
 ### Blocker
+No Blockers.
 
+### XP Value : Team Feedback
+All team members worked on their respective features. The observer pattern I have implemented was not much fitted with overall implementation. After doing analysis, I have given feedback of my analysis to Dylan(as he was implementing Jet & Bullet features). We had a quick zoom meeting to discuss on how after hitting bullets to jets will detect the hit and update repective scores. After getting feedback of the Jet& bullet implementation , we have changed the design for jet, bullet and for score also. I tried to finish the implementation and design of score feature with observer pattern.
 
 ## Week 4 (April 10th to April 16th)
 
