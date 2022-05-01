@@ -26,6 +26,7 @@ public class Jet extends Actor implements IDetectHitSubject
         else {
             strat = getWADStrat();
         }
+        scale();
     }
     
     public Jet(int mode, int mvmntSpeed, int bulletSpeed) {
@@ -38,6 +39,7 @@ public class Jet extends Actor implements IDetectHitSubject
         else {
             strat = getWADStrat();
         }
+        scale();
     }
     
     /**
@@ -146,5 +148,10 @@ public class Jet extends Actor implements IDetectHitSubject
     
     public int getBulletSpeed() {
         return bulletSpeed;
+    }
+    
+    public void scale(){
+        GreenfootImage jetImage = getImage();
+        jetImage.scale(50,50);
     }
 }

@@ -11,7 +11,7 @@ public class JetTwoScoreDisplay extends Actor
     private static JetTwoScoreDisplay jetTwoScoreDisplayInstance;
     GreenfootImage backgroundImage;
     GreenfootImage jetTwoScoreText;
-    private static GreenfootImage jetTwoImage = new GreenfootImage("plane-white.png");
+    private static GreenfootImage jetTwoImage = new GreenfootImage("jet_white.png");
 
     /**
      * Act - do whatever the JetTwoScoreDisplay wants to do. This method is called whenever
