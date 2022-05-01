@@ -18,6 +18,7 @@ public class ScoreCard extends Actor implements IUpdateScoreObserver
     public void act()
     {
         // Add your action code here.
+        updateScore();
     }
     
     public void updateScore() {
