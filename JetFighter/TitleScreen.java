@@ -27,6 +27,7 @@ public class TitleScreen extends World
         
         GreenfootImage gameLogo = new GreenfootImage("game_logo.png");
         gameLogo.scale(350,350);
+        
         Logo logo = new Logo(gameLogo);
         addObject(logo, getWidth()/2, 200);
     }
