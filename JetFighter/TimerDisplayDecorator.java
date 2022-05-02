@@ -22,7 +22,6 @@ public class TimerDisplayDecorator extends Actor
     public void act()
     {
         timer.act();
-        System.out.println("minutes"+ timer.getMinutes());
         updateImage(timer.getMinutes(), timer.getSeconds());
     }
     
