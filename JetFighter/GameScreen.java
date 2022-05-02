@@ -19,6 +19,7 @@ public class GameScreen extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(900, 650, 1); 
+<<<<<<< HEAD
         jetOneScoreDisplay = JetOneScoreDisplay.getInstance();
         jetTwoScoreDisplay = JetTwoScoreDisplay.getInstance();
         setScreen();
@@ -27,5 +28,16 @@ public class GameScreen extends World
     private void setScreen() {
         addObject(jetOneScoreDisplay,100,70);
         addObject(jetTwoScoreDisplay,800,70);
+=======
+        
+        TimerDisplay timer = new TimerDisplay();
+        addObject(timer, 450, 40);
+        
+        Jet jet1 = new Jet1(0);
+        addObject(jet1, 100, 325);
+        
+        Jet jet2 = new Jet2(1);
+        addObject(jet2, 800, 325);
+>>>>>>> 5e024ae1aeb127edd32991522144f6a2a4cb07ea
     }
 }
