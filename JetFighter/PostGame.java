@@ -34,4 +34,10 @@ public class PostGame extends World
         addObject(new Continue(), getWidth()/2, 500);
         addObject(new ExitGame(), getWidth()/2, 570);
     }
+    
+    public void act(){
+        if("escape".equals(Greenfoot.getKey())){
+            System.exit(1);
+        } 
+    }
 }
