@@ -12,13 +12,13 @@ public class SpeedLabel extends GameSettingsOptions
         GreenfootImage speedLabel =  new GreenfootImage(200,200);
         Font adjustedFont = new Font(true, false, 30);
         speedLabel.setFont(adjustedFont);
-        speedLabel.setColor(Color.LIGHT_GRAY);
+        speedLabel.setColor(Color.WHITE);
         speedLabel.drawString(label, 0, 50);
         setImage(speedLabel);
     }
     
     public void act()
     {
-        checkMouse();
+        //checkMouse();
     }
 }
