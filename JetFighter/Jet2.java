@@ -8,20 +8,23 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Jet2 extends Jet implements IDetectHitSubject
 {
+    public Jet2(int mode) {
+        super(mode);
+        GreenfootImage jet2 =  new GreenfootImage("jet_white.png");
+        jet2.scale(60,60);
+        setImage(jet2);
+    }
+    
+    public Jet2(int mode, int mvmntSpeed, int bulletSpeed) {
+        super(mode, mvmntSpeed, bulletSpeed);
+    }
+    
     public void act() {
         super.act();
         if(isTouching(Bullet1.class)) {
             notifyObservers();
         }
         JetOneScoreDisplay.getInstance().updateScoreDisplay();
-    }
-    
-    public Jet2(int mode) {
-        super(mode);
-    }
-    
-    public Jet2(int mode, int mvmntSpeed, int bulletSpeed) {
-        super(mode, mvmntSpeed, bulletSpeed);
     }
     
     public void shoot() {
