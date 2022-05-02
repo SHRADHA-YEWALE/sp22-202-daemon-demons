@@ -7,20 +7,23 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @version (a version number or a date)
  */
 public class Jet1 extends Jet implements IDetectHitSubject
-{
+{ 
+    public Jet1(int mode) {
+        super(mode);
+        GreenfootImage jet1 =  new GreenfootImage("jet_black.png");
+        jet1.scale(60,60);
+        setImage(jet1);
+    }
+    
+    public Jet1(int mode, int mvmntSpeed, int bulletSpeed) {
+        super(mode, mvmntSpeed, bulletSpeed);
+    }
+    
     public void act() {
         super.act();
         if(isTouching(Bullet2.class)) {
             notifyObservers();
         }
-    }
-    
-    public Jet1(int mode) {
-        super(mode);
-    }
-    
-    public Jet1(int mode, int mvmntSpeed, int bulletSpeed) {
-        super(mode, mvmntSpeed, bulletSpeed);
     }
     
     public void shoot() {
