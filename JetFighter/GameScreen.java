@@ -21,5 +21,11 @@ public class GameScreen extends World
         super(900, 650, 1); 
         jetOneScoreDisplay = JetOneScoreDisplay.getInstance();
         jetTwoScoreDisplay = JetTwoScoreDisplay.getInstance();
+        setScreen();
+    }
+    
+    private void setScreen() {
+        addObject(jetOneScoreDisplay,100,70);
+        addObject(jetTwoScoreDisplay,600,70);
     }
 }

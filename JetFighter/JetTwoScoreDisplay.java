@@ -11,7 +11,7 @@ public class JetTwoScoreDisplay extends Actor
     private static JetTwoScoreDisplay jetTwoScoreDisplayInstance;
     GreenfootImage backgroundImage;
     GreenfootImage jetTwoScoreText;
-    private static GreenfootImage jetTwoImage = new GreenfootImage("BackgroundScoreImage.jpeg");
+    //private static GreenfootImage jetTwoImage = new GreenfootImage("BackgroundScoreImage.jpeg");
     private static final Color transparent = new Color(0, 0, 0, 0);
 
 
@@ -22,34 +22,32 @@ public class JetTwoScoreDisplay extends Actor
     public void act()
     {
         // Add your action code here.
-
+        updateScoreDisplay();
     }
     
     public static JetTwoScoreDisplay getInstance() {
         if (jetTwoScoreDisplayInstance == null) {
-            jetTwoImage.scale(30, 30);
-            jetTwoScoreDisplayInstance = new JetTwoScoreDisplay(JetTwoScore.getScoreInstance().getScore(), jetTwoImage);
+            jetTwoScoreDisplayInstance = new JetTwoScoreDisplay(JetTwoScore.getScoreInstance().getScore());
         }
         return jetTwoScoreDisplayInstance;
     }
     
-    public JetTwoScoreDisplay(int score, GreenfootImage jetTwoImage) {
+    public JetTwoScoreDisplay(int score) {
         backgroundImage = getImage();
-        displayScore(score, jetTwoImage);
+        displayScore(score);
     }
     
     public JetTwoScoreDisplay() {}
     
-    public void displayScore(int score, GreenfootImage jetTwoImage) {
-        backgroundImage = getImage();
-        jetTwoScoreText = new GreenfootImage("Jet2 Scaore : " + score, 25, Color.BLACK,transparent);
-        backgroundImage.drawImage(jetTwoImage, 15, 20);
+    public void displayScore(int score) {
+        backgroundImage = new GreenfootImage("BackgroundScoreImage.jpeg");
+        jetTwoScoreText = new GreenfootImage("Jet2 Score : " + score, 25, Color.BLACK,transparent);
         backgroundImage.drawImage(jetTwoScoreText, 50, 70);
-        backgroundImage.scale(150, 75);
+        backgroundImage.scale(300, 75);
         setImage(backgroundImage);
     }
     
     public void updateScoreDisplay() {
-        displayScore(JetTwoScore.getScoreInstance().getScore(), jetTwoImage);
+        displayScore(JetTwoScore.getScoreInstance().getScore());
     }
 }
