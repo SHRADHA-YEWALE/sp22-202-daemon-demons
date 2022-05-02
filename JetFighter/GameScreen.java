@@ -32,10 +32,10 @@ public class GameScreen extends World
         Actor timer = new TimerBlinkDecorator(new TimerDisplayDecorator(new Timer(GameConfig.gameDuration))); 
         addObject(timer, getWidth() / 2, 65);
         
-        Jet jet1 = new Jet1(0);
+        Jet jet1 = new Jet1(0, GameConfig.jetSpeed, GameConfig.bulletSpeed );
         addObject(jet1, 100, 325);
         
-        Jet jet2 = new Jet2(1);
+        Jet jet2 = new Jet2(1, GameConfig.jetSpeed, GameConfig.bulletSpeed );
         addObject(jet2, 800, 325);
     }
 }

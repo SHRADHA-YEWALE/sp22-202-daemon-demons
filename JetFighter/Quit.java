@@ -20,7 +20,7 @@ public class Quit extends MenuOptions
     {
         checkMouse();
         if(Greenfoot.mouseClicked(this)){
-            System.exit(0);  // quits game
+            System.exit(1);  // quits game
         }
     }  
 }

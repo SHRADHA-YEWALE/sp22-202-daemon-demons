@@ -11,9 +11,9 @@ public class Jet extends Actor implements IDetectHitSubject
 {
     private static final int SHOOTING_COOLDOWN = 50;
     private IMovementStrategy strat;
-    private static int mvmntSpeed = 4;
+    private static int mvmntSpeed = GameConfig.jetSpeed;
     private int turnSpeed = 3;
-    private int bulletSpeed = 6;
+    private int bulletSpeed = GameConfig.bulletSpeed;
     private int cooldown = 0;
     private Jet jet = this;
 
