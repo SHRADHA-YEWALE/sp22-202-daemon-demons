@@ -33,7 +33,7 @@ public class TimerBlinkDecorator extends TimerDecorator
         int seconds = timer.getSeconds();
         
         setImage(displayDecorator.getImage());
-        if(minutes == 0 && seconds < 10){ // change : take from config
+        if(minutes == 0 && seconds < GameConfig.timeToStartBlinking){
             int actNo = timer.getActNo();
             int rem = actNo % 55;
             if(rem >= 0  && rem < 23){

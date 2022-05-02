@@ -26,7 +26,7 @@ public class TimerDisplayDecorator extends TimerDecorator
     
     private void updateImage(int minutes, int seconds)
     {
-        setImage(new GreenfootImage(String.format("%02d", minutes) + " : " + String.format("%02d", seconds), 30, Color.BLACK, new Color(0, 0, 0, 0)));
+        setImage(new GreenfootImage(String.format("%02d", minutes) + " : " + String.format("%02d", seconds), 55, Color.BLACK, new Color(0, 0, 0, 0)));
     }
 
 }

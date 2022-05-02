@@ -26,7 +26,10 @@ public class Timer extends Actor
             minutes = noActs / 55 / 60;
             seconds = noActs / 55 % 60;
         };
-        if (noActs < 1) Greenfoot.stop();
+        if (noActs < 1) {
+            PostGame postGameWorld = new PostGame(JetOneScore.getScoreInstance().getScore(),JetTwoScore.getScoreInstance().getScore());
+            Greenfoot.setWorld(postGameWorld);  
+        }
     }
      
     public int getMinutes(){ return minutes; }

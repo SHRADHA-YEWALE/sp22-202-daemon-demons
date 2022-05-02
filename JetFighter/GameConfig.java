@@ -6,8 +6,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class GameConfig extends Actor
+public class GameConfig
 {
-    private static int bulletSpeed = GameSettingsScreen.getBulletSpeed();
-    private static int jetSpeed =  GameSettingsScreen.getJetSpeed();
+    public static int bulletSpeed = GameSettingsScreen.getBulletSpeed();
+    public static int jetSpeed =  GameSettingsScreen.getJetSpeed();
+    public static int gameDuration = 20;
+    public static int timeToStartBlinking = 10;
 }

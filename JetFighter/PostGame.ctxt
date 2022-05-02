@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=PostGame
+comment0.text=\n\ Write\ a\ description\ of\ class\ PostGame\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=PostGame()
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ PostGame.\n\ \n
+comment2.params=xScore\ yScore
+comment2.target=PostGame(int,\ int)
+comment3.params=
+comment3.target=void\ prepare()
+numComments=4
