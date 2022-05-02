@@ -26,7 +26,7 @@ public class MenuScreen extends World
      */
     private void prepare()
     {
-        GreenfootImage gameLogo = new GreenfootImage("game_logo.png");
+        GreenfootImage gameLogo = new GreenfootImage("logo_white.png");
         gameLogo.scale(500,500);
         Logo logo = new Logo(gameLogo);
         addObject(logo, 200, 130);
@@ -36,7 +36,7 @@ public class MenuScreen extends World
         addObject(play,259,160);
         
         Settings settings = new Settings();
-        addObject(settings,240,278);
+        addObject(settings,270,278);
 
         Quit quit = new Quit();
         addObject(quit,287,353);
