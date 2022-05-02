@@ -26,8 +26,8 @@ public class MenuScreen extends World
      */
     private void prepare()
     {
-        GreenfootImage gameLogo = new GreenfootImage("game_logo.png");
-        gameLogo.scale(500,500);
+        GreenfootImage gameLogo = new GreenfootImage("logo_white.png");
+        gameLogo.scale(400,400);
         Logo logo = new Logo(gameLogo);
         addObject(logo, 200, 130);
         logo.setLocation(440,175);
@@ -36,13 +36,13 @@ public class MenuScreen extends World
         addObject(play,259,160);
         
         Settings settings = new Settings();
-        addObject(settings,240,278);
+        addObject(settings,270,278);
 
         Quit quit = new Quit();
         addObject(quit,287,353);
         
-        play.setLocation(450, 350);
+        play.setLocation(450, 340);
         settings.setLocation(450, 415);
-        quit.setLocation(450, 430);
+        quit.setLocation(450, 440);
     }
 }

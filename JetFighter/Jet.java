@@ -11,7 +11,7 @@ public class Jet extends Actor implements IDetectHitSubject
 {
     private static final int SHOOTING_COOLDOWN = 50;
     private IMovementStrategy strat;
-    private int mvmntSpeed = 4;
+    private static int mvmntSpeed = 4;
     private int turnSpeed = 3;
     private int bulletSpeed = 6;
     private int cooldown = 0;
@@ -42,6 +42,14 @@ public class Jet extends Actor implements IDetectHitSubject
             strat = getWADStrat();
         }
         scale();
+    }
+    
+    public void setJetSpeed(int s){
+        mvmntSpeed = s;
+    }
+    
+    public static int getJetSpeed(){
+        return mvmntSpeed;
     }
     
     /**
