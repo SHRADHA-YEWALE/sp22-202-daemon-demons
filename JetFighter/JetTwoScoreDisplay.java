@@ -11,6 +11,7 @@ public class JetTwoScoreDisplay extends Actor
     private static JetTwoScoreDisplay jetTwoScoreDisplayInstance;
     GreenfootImage backgroundImage;
     GreenfootImage jetTwoScoreText;
+    GreenfootImage jetTwoScore;
     private static final Color transparent = new Color(0, 0, 0, 0);
 
 
@@ -38,8 +39,8 @@ public class JetTwoScoreDisplay extends Actor
     public JetTwoScoreDisplay() {}
     
     public void displayScore(int score) {
-        jetTwoScoreText = new GreenfootImage("Jet2 Score : " + score, 40, Color.BLACK,transparent);
-        jetTwoScoreText.scale(180, 90);
+        jetTwoScoreText = new GreenfootImage("Jet2: " + score, 35, Color.WHITE, transparent);
+        jetTwoScoreText.scale(170, 40);
         setImage(jetTwoScoreText);
     }
     
