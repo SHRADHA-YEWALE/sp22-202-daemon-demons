@@ -28,19 +28,17 @@ public class GameSettingsScreen extends World
     {
         GreenfootImage gameLogo = new GreenfootImage("logo_white.png");
         gameLogo.scale(350,350);
-        Logo logo = new Logo(gameLogo);
-        addObject(logo, 200, 130);
-        logo.setLocation(440,140);
+        addObject(new Logo(gameLogo), 440, 140);
        
         addObject(new BulletSpeed(), 200, 420);
         addObject( new BulletDecrementSpeedButton(), 420, 420);
         addObject(new BulletSpeedLabel(), 460, 420);
-        addObject(new BulletIncrementSpeedButton(), 500, 420); 
+        addObject(new BulletIncrementSpeedButton(), 510, 420); 
         
         addObject(new JetSpeed(),200, 490);
         addObject( new JetDecrementSpeedButton(), 420, 490);
         addObject(new JetSpeedLabel(), 460, 490);
-        addObject(new JetIncrementSpeedButton(), 500,490); 
+        addObject(new JetIncrementSpeedButton(), 510,490); 
         
         addObject(new Back(),160,500);
         
