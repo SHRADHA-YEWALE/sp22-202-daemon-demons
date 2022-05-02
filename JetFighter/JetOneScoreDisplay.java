@@ -33,15 +33,13 @@ public class JetOneScoreDisplay extends Actor
     public JetOneScoreDisplay() {}
     
     public JetOneScoreDisplay(int score) {
-        System.out.println("score display"+ score);
-
         backgroundImage = getImage();
         displayScore(score);
     }
     
     public void displayScore(int score) {
         backgroundImage = new GreenfootImage("space1.jpg");
-        jetOneScoreText = new GreenfootImage("Jet1 Score : " + 100, 40, Color.WHITE, transparent);
+        jetOneScoreText = new GreenfootImage("Jet1 Score : " + score, 40, Color.WHITE, transparent);
         backgroundImage.drawImage(jetOneScoreText, 10, 10);
         backgroundImage.scale(180, 120);
         setImage(backgroundImage);
