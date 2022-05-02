@@ -19,6 +19,6 @@ public class SpeedLabel extends GameSettingsOptions
     
     public void act()
     {
-        checkMouse();
+        //checkMouse();
     }
 }
