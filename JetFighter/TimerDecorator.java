@@ -1,15 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class TimeBlinkDecorator here.
+ * Write a description of class TimerDecorator here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class TimerBlinkDecorator extends TimerDecorator
+public class TimerDecorator extends Actor
 {
     /**
-     * Act - do whatever the TimeBlinkDecorator wants to do. This method is called whenever
+     * Act - do whatever the TimerDecorator wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act()
