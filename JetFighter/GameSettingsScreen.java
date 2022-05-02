@@ -37,9 +37,6 @@ public class GameSettingsScreen extends World
         return jet_speed;
     }
     
-    
-    
-    
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
@@ -71,29 +68,29 @@ public class GameSettingsScreen extends World
         SpeedLabel jetSpeedLabel =  new SpeedLabel(String.valueOf(jet_speed));
         addObject(jetSpeedLabel, 330, 330);
         
-        PlusButton plusButtonBullet = new PlusButton();
-        addObject(plusButtonBullet, 200, 220);
-        
-        PlusButton plusButtonJet = new PlusButton();
-        addObject(plusButtonJet, 240, 290);
-        
         MinusButton minusButtonBullet = new MinusButton();
-        addObject(minusButtonBullet, 160, 190);
+        addObject(minusButtonBullet,160,190);
+        
+        PlusButton plusButtonBullet = new PlusButton();
+        addObject(plusButtonBullet, 405, 320);
         
         MinusButton minusButtonJet = new MinusButton();
         addObject(minusButtonJet, 270, 350);
         
+        PlusButton plusButtonJet = new PlusButton();
+        addObject(plusButtonJet, 440, 390); 
+        
         bulletSpeed.setLocation(200, 420);
         bulletSpeedLabel.setLocation(460, 420);
         
-        plusButtonBullet.setLocation(500, 420);
         minusButtonBullet.setLocation(420, 420);
+        plusButtonBullet.setLocation(500, 420);
         
         jetSpeed.setLocation(200, 490);
         jetSpeedLabel.setLocation(460, 490);
         
-        plusButtonJet.setLocation(500,490);
         minusButtonJet.setLocation(420, 490);
+        plusButtonJet.setLocation(500,490);
     
         back.setLocation(160,500);
         
