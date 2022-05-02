@@ -10,6 +10,6 @@ public class GameConfig
 {
     public static int bulletSpeed = 6;
     public static int jetSpeed =  4;
-    public static int gameDuration = 20;
+    public static int gameDuration = 30;
     public static int timeToStartBlinking = 10;
 }

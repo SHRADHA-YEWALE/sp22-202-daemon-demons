@@ -11,6 +11,9 @@ public class GameScreen extends World
     private JetOneScoreDisplay jetOneScoreDisplay;
     private JetTwoScoreDisplay jetTwoScoreDisplay;
     
+    private int imageCount = 0;
+    
+    GreenfootImage background = new GreenfootImage("cloudbackground1.jpeg");
     /**
      * Constructor for objects of class GameScreen.
      * 
@@ -37,5 +40,19 @@ public class GameScreen extends World
         
         Jet jet2 = new Jet2(1, GameConfig.jetSpeed, GameConfig.bulletSpeed );
         addObject(jet2, 800, 325);
+    }
+    
+    public void act(){
+        imageCount -= 2;
+        animateImage(background);
+    }
+    
+    public void animateImage(GreenfootImage image) {
+        if (imageCount <  -image.getWidth()) {
+            imageCount += image.getWidth();
+        }
+        int temp = imageCount;
+        getBackground().drawImage(image, temp, 0);
+        getBackground().drawImage(image, temp + image.getWidth(), 0);
     }
 }
