@@ -12,7 +12,7 @@ public class Quit extends MenuOptions
         GreenfootImage quitButton =  new GreenfootImage(100,60);
         Font adjustedFont = new Font("Marlboro",true, false, 30);
         quitButton.setFont(adjustedFont);
-        quitButton.setColor(Color.LIGHT_GRAY);
+        quitButton.setColor(Color.WHITE);
         quitButton.drawString("Quit", 0, 50);
         setImage(quitButton);
     }
