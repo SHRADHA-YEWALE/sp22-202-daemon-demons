@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class TitleScreen extends World
 {
-
+    GreenfootSound backgroundMusic = new GreenfootSound("background.mp3");
     /**
      * Constructor for objects of class TitleScreen.
      * 
@@ -30,9 +30,12 @@ public class TitleScreen extends World
         
         Logo logo = new Logo(gameLogo);
         addObject(logo, getWidth()/2, 210);
+        
     }
     
     public void act(){ 
+        backgroundMusic.play();
+        
         if("enter".equals(Greenfoot.getKey())){
             Greenfoot.setWorld(new MenuScreen());
         } 
