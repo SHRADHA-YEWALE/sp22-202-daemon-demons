@@ -37,4 +37,15 @@ public class GameSettingsOptions extends Actor
         tempImg.setTransparency(adjustmentFactor);
         setImage(tempImg);
     }
+    
+    public void incrementBulletSpeed(){
+        if(Greenfoot.mouseMoved(null)){  
+            mouseOver = Greenfoot.mouseMoved(this);    
+        }
+        
+        if(mouseOver){
+            int newSpeed = Bullet.getSpeed() + 1;
+            Bullet.setSpeed(newSpeed);
+        }
+    }
 }

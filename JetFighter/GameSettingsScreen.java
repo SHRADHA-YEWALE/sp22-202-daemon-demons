@@ -44,8 +44,12 @@ public class GameSettingsScreen extends World
         SpeedLabel speedLabel = new SpeedLabel(String.valueOf(speed));
         addObject(speedLabel, 300, 300);
         
+        PlusButton plusButton = new PlusButton();
+        addObject(plusButton, 330, 330);
+        
         bulletSpeed.setLocation(200, 320);
         speedLabel.setLocation(450, 320);
+        plusButton.setLocation(490, 320);
         //settings.setLocation(300, 325);
         //quit.setLocation(300, 350);
     
