@@ -29,8 +29,8 @@ public class GameScreen extends World
         addObject(jetOneScoreDisplay,100,70);
         addObject(jetTwoScoreDisplay,850,70);
 
-        TimerDisplay timer = new TimerDisplay();
-        addObject(timer, 450, 40);
+        Actor timer = new TimerDisplayDecorator(new Timer(120)); // change to get value from configs
+        addObject(timer, getWidth() / 2, 40);
         
         Jet jet1 = new Jet1(0);
         addObject(jet1, 100, 325);

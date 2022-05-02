@@ -25,11 +25,11 @@ public class TitleScreen extends World
         addObject(titleLetters, 220, 220); 
         titleLetters.setLocation(400,190);
         
-        GreenfootImage gameLogo = new GreenfootImage("game_logo.png");
-        gameLogo.scale(350,350);
+        GreenfootImage gameLogo = new GreenfootImage("logo_white.png");
+        gameLogo.scale(400,400);
         
         Logo logo = new Logo(gameLogo);
-        addObject(logo, getWidth()/2, 200);
+        addObject(logo, getWidth()/2, 210);
     }
     
     public void act(){ 
