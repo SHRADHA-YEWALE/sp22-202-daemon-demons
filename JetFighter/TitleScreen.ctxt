@@ -8,4 +8,6 @@ comment2.params=
 comment2.target=void\ prepare()
 comment3.params=
 comment3.target=void\ act()
-numComments=4
+comment4.params=image
+comment4.target=void\ animateImage(greenfoot.GreenfootImage)
+numComments=5
