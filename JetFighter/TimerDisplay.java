@@ -17,11 +17,13 @@ public class TimerDisplay extends Actor
      
     public void act()
     {
-        
+        timer--;
+        if (timer % 55 == 0) updateImage();
+        if (timer < 1) Greenfoot.stop();
     }
      
     private void updateImage()
     {
-        setImage(new GreenfootImage("Time: " + timer/55, 20, Color.BLACK, new Color(0, 0, 0, 0)));
+        setImage(new GreenfootImage("Time: " + timer/55, 30, Color.BLACK, new Color(0, 0, 0, 0)));
     }
 }
