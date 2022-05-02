@@ -11,7 +11,6 @@ public class JetTwoScoreDisplay extends Actor
     private static JetTwoScoreDisplay jetTwoScoreDisplayInstance;
     GreenfootImage backgroundImage;
     GreenfootImage jetTwoScoreText;
-    //private static GreenfootImage jetTwoImage = new GreenfootImage("BackgroundScoreImage.jpeg");
     private static final Color transparent = new Color(0, 0, 0, 0);
 
 
@@ -21,8 +20,7 @@ public class JetTwoScoreDisplay extends Actor
      */
     public void act()
     {
-        // Add your action code here.
-        updateScoreDisplay();
+
     }
     
     public static JetTwoScoreDisplay getInstance() {
