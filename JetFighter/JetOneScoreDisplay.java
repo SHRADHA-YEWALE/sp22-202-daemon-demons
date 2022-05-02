@@ -38,8 +38,8 @@ public class JetOneScoreDisplay extends Actor
     }
     
     public void displayScore(int score) {
-        jetOneScoreText = new GreenfootImage("Jet1 Score : " + score, 40, Color.BLACK, transparent);
-        jetOneScoreText.scale(180, 90);
+        jetOneScoreText = new GreenfootImage("Jet1: " + score, 35, Color.WHITE, transparent);
+        jetOneScoreText.scale(170, 40);
         setImage(jetOneScoreText);
     }
     
