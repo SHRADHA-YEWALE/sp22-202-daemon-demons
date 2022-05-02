@@ -13,7 +13,7 @@ public class Jet2 extends Jet implements IDetectHitSubject
         if(isTouching(Bullet1.class)) {
             notifyObservers();
         }
-        JetTwoScoreDisplay.getInstance().updateScoreDisplay();
+        JetOneScoreDisplay.getInstance().updateScoreDisplay();
     }
     
     public Jet2(int mode) {

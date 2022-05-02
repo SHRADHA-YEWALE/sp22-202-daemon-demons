@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (shradha yewale) 
  * @version (a version number or a date)
  */
-public class JetOneScore extends ScoreCard
+public class JetOneScore extends Actor implements IUpdateScoreObserver
 {
     private static int score = 0;
     private static JetOneScore jetOneScore;
@@ -32,6 +32,7 @@ public class JetOneScore extends ScoreCard
     }
 
     public int getScore() {
+        System.out.println("score"+score);
         return score;
     }
     

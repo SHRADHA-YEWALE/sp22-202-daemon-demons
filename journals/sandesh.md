@@ -35,20 +35,26 @@ Everyone showed courage by bringing new game ideas into the discussion. Everyone
 * None
 
 ### XP value - Courage
-Team members showed courage by quickly learning Greenfoot and getting started with the development of the game. Team has been keeping with the timeline and continuously challenging themselves to implement the project. 
+Team members showed courage by quickly learning Greenfoot and getting started with the development of the game. Team has been keeping with the timeline and continuously challenging themselves to implement the project.
 
 ## Week 3 (April 23rd to April 30th)
 
 ### Tasks worked on
-
+* Created architecture diagram
+* Created UI wireframes for multiple screens
+* Redid assets
 
 ### Tasks planned
-
+* Integrate assets to game
+* Implement timer 
+* Timer integration
 
 ### Blockers
-
+* None
 
 ### XP value - Courage
+Team members showed courage by adding additional features like multiplayer jets. Some tasks had to be repeated like asset creation. The team has been keeping up with the planned timeline and the progress is looking pretty good.
+
 
 ## Week 4 (May 01st to May 07th)
 
