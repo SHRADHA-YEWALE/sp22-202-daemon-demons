@@ -19,8 +19,8 @@ public class PlusButton extends GameSettingsOptions
   
     public void act()
     {
-        //checkMouse();
-        //incrementBulletSpeed();
+        checkMouse();
+        //increaseSpeed();
     }
 
 }
