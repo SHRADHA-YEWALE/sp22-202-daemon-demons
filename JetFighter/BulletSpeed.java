@@ -18,6 +18,6 @@ public class BulletSpeed extends GameSettingsOptions
     }
     public void act()
     {
-        checkMouse();
+        //checkMouse();
     }
 }

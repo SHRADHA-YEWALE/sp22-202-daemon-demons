@@ -27,8 +27,8 @@ public class Bullet extends Actor
         return speed;
     }
     
-    public void setSpeed(int speed){
-        this.speed = speed;
+    public static void setSpeed(int s){
+        speed = s;
     }
     /**
      * Act - do whatever the Bullet wants to do. This method is called whenever
