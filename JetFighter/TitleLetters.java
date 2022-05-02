@@ -18,6 +18,6 @@ public class TitleLetters extends Actor
     }
     
     public TitleLetters(){
-        getImage().scale(420,390);
+        getImage().scale(500,390);
     }
 }
