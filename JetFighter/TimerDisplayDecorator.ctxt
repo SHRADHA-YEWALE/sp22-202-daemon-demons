@@ -1,8 +1,8 @@
 #BlueJ class context
 comment0.target=TimerDisplayDecorator
 comment0.text=\n\ Write\ a\ description\ of\ class\ TimerDecorator\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
-comment1.params=timer
-comment1.target=TimerDisplayDecorator(Timer)
+comment1.params=timeActor
+comment1.target=TimerDisplayDecorator(greenfoot.Actor)
 comment2.params=
 comment2.target=void\ act()
 comment2.text=\n\ Act\ -\ do\ whatever\ the\ TimerDecorator\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n

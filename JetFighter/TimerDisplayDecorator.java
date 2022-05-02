@@ -7,12 +7,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @version (a version number or a date)
  */
 public class TimerDisplayDecorator extends TimerDecorator
-{
-    private Timer timer;
-    
-    public TimerDisplayDecorator(Timer timer){
-        this.timer = timer;
-        updateImage(timer.getMinutes(), timer.getSeconds());
+{    
+       
+    public TimerDisplayDecorator(Actor timeActor){
+        timer = (Timer) timeActor;
+        updateImage(this.timer.getMinutes(), this.timer.getSeconds());
     }
     
     /**
@@ -29,4 +28,5 @@ public class TimerDisplayDecorator extends TimerDecorator
     {
         setImage(new GreenfootImage(String.format("%02d", minutes) + " : " + String.format("%02d", seconds), 30, Color.BLACK, new Color(0, 0, 0, 0)));
     }
+
 }
