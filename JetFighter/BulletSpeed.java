@@ -12,12 +12,12 @@ public class BulletSpeed extends GameSettingsOptions
         GreenfootImage bulletSpeed =  new GreenfootImage(200,200);
         Font adjustedFont = new Font(true, false, 30);
         bulletSpeed.setFont(adjustedFont);
-        bulletSpeed.setColor(Color.LIGHT_GRAY);
+        bulletSpeed.setColor(Color.WHITE);
         bulletSpeed.drawString("Bullet Speed:", 0, 50);
         setImage(bulletSpeed);
     }
     public void act()
     {
-        checkMouse();
+        //checkMouse();
     }
 }
