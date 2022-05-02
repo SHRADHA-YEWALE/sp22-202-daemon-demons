@@ -16,7 +16,9 @@ public class Jet extends Actor implements IDetectHitSubject
     private int bulletSpeed = 6;
     private int cooldown = 0;
     private Jet jet = this;
-    
+
+    public GreenfootSound bulletSound= new GreenfootSound("bullet.mp3");
+    public GreenfootSound laserSound= new GreenfootSound("laser.wav");
     public enum BOUNDS{
         IN_BOUNDS, TOP, RIGHT, BOTTOM, LEFT
     };
@@ -129,6 +131,7 @@ public class Jet extends Actor implements IDetectHitSubject
             public void shoot() {
                 if(Greenfoot.isKeyDown("up")){
                     jet.shoot();
+                    laserSound.play();
                 }
             }
         };
@@ -153,6 +156,7 @@ public class Jet extends Actor implements IDetectHitSubject
             public void shoot() {
                 if(Greenfoot.isKeyDown("W")){
                     jet.shoot();
+                    bulletSound.play();
                 }
             }
         };
