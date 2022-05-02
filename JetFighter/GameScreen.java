@@ -8,7 +8,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class GameScreen extends World
 {
-
+    private JetOneScoreDisplay jetOneScoreDisplay;
+    private JetTwoScoreDisplay jetTwoScoreDisplay;
+    
     /**
      * Constructor for objects of class GameScreen.
      * 
@@ -17,5 +19,7 @@ public class GameScreen extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(900, 650, 1); 
+        jetOneScoreDisplay = JetOneScoreDisplay.getInstance();
+        jetTwoScoreDisplay = JetTwoScoreDisplay.getInstance();
     }
 }

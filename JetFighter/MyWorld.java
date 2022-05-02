@@ -20,6 +20,8 @@ public class MyWorld extends World
     }
     
     public void act(){
-         Greenfoot.setWorld(new TitleScreen());
+        Greenfoot.setWorld(new TitleScreen());
+        JetOneScoreDisplay.getInstance().updateScoreDisplay();
+        JetTwoScoreDisplay.getInstance().updateScoreDisplay();
     }
 }
