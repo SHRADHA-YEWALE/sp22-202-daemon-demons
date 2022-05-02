@@ -21,8 +21,6 @@ public class JetOneScoreDisplay extends Actor
     public void act()
     {
         // Add your action code here.
-        updateScoreDisplay();
-        //displayScore(20,jetOneImage);
     }
     
     public static JetOneScoreDisplay getInstance() {
@@ -35,23 +33,21 @@ public class JetOneScoreDisplay extends Actor
     public JetOneScoreDisplay() {}
     
     public JetOneScoreDisplay(int score) {
+        System.out.println("score display"+ score);
+
         backgroundImage = getImage();
         displayScore(score);
     }
     
     public void displayScore(int score) {
-        backgroundImage = getImage();
-        //jetOneScoreText = new GreenfootImage("Jet1 Score : " + 20, 25, Color.BLACK, transparent);
-
-        jetOneScoreText = new GreenfootImage("Jet1 Score : " + 20, 50, Color.BLACK, transparent);
+        backgroundImage = new GreenfootImage("space1.jpg");
+        jetOneScoreText = new GreenfootImage("Jet1 Score : " + 100, 40, Color.WHITE, transparent);
         backgroundImage.drawImage(jetOneScoreText, 10, 10);
-        backgroundImage.scale(400, 60);
+        backgroundImage.scale(180, 120);
         setImage(backgroundImage);
     }
     
     public void updateScoreDisplay() {
-        backgroundImage.clear();
-        setImage("BackgroundScoreImage.jpeg");
         displayScore(JetOneScore.getScoreInstance().getScore());
     }
         
