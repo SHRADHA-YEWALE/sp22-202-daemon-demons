@@ -26,6 +26,6 @@ public class GameScreen extends World
     
     private void setScreen() {
         addObject(jetOneScoreDisplay,100,70);
-        addObject(jetTwoScoreDisplay,600,70);
+        addObject(jetTwoScoreDisplay,800,70);
     }
 }
