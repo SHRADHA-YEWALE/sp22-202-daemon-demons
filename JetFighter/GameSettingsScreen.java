@@ -25,10 +25,18 @@ public class GameSettingsScreen extends World
     private void prepare()
     {
         GreenfootImage gameLogo = new GreenfootImage("game_logo.png");
-        gameLogo.scale(350,350);
+        gameLogo.scale(400,400);
         Logo logo = new Logo(gameLogo);
         addObject(logo, 200, 130);
-        logo.setLocation(294,133);
+        logo.setLocation(440,165);
+        
+        /*
+         *  GreenfootImage gameLogo = new GreenfootImage("game_logo.png");
+        gameLogo.scale(500,500);
+        Logo logo = new Logo(gameLogo);
+        addObject(logo, 200, 130);
+        logo.setLocation(440,175);
+         */
         
         BulletSpeed bulletSpeed = new BulletSpeed();
         addObject(bulletSpeed,259,160);
@@ -44,12 +52,12 @@ public class GameSettingsScreen extends World
         SpeedLabel speedLabel = new SpeedLabel(String.valueOf(speed));
         addObject(speedLabel, 300, 300);
         
-        bulletSpeed.setLocation(200, 320);
-        speedLabel.setLocation(450, 320);
+        bulletSpeed.setLocation(200, 420);
+        speedLabel.setLocation(460, 420);
         //settings.setLocation(300, 325);
         //quit.setLocation(300, 350);
     
-        back.setLocation(294,332);
+        back.setLocation(160,500);
         
         
     }
