@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=MenuOption
+comment0.text=\n\ Write\ a\ description\ of\ class\ MenuOption\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=image
+comment1.target=MenuOption(greenfoot.GreenfootImage)
+comment2.params=c
+comment2.target=void\ setCommand(IMenuCommand)
+comment2.text=\n\ Set\ Command\ for\ Menu\ Option\n\ @param\ c\ [description]\n
+comment3.params=
+comment3.target=void\ invoke()
+comment3.text=Invoke\ Menu\ Option
+comment4.params=
+comment4.target=void\ act()
+comment5.params=
+comment5.target=void\ click()
+comment6.params=
+comment6.target=void\ checkMouse()
+comment7.params=adjustmentFactor
+comment7.target=void\ adjustButtonTransparency(int)
+numComments=8
