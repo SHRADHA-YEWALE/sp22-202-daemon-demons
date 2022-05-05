@@ -13,7 +13,7 @@ public class Buttons
 
     private static final GreenfootSound clickSound = new GreenfootSound("menu_option.wav");
     
-    public Buttons() {
+        public Buttons() {
         optionsImageMap = new HashMap<>();
         optionsCommandMap = new HashMap<>();
 
@@ -26,8 +26,7 @@ public class Buttons
         playCommand.setReceiver(new IMenuReceiver() {
             public void doAction() {
                 clickSound.play();
-                Greenfoot.setWorld(new GameScreen());
-                
+                Greenfoot.setWorld(new GameScreen());    
             }
         });
         optionsCommandMap.put("Play", playCommand);
@@ -54,7 +53,6 @@ public class Buttons
         quitCommand.setReceiver(new IMenuReceiver() {
             public void doAction() {
                 clickSound.play();
-                //Greenfoot.stop();
                 System.exit(0);  // quits game       
             }
         });
@@ -103,7 +101,6 @@ public class Buttons
 
         MenuOption option = new MenuOption(image);
         option.setCommand(cmd);
-
         return option;
     }
 }
