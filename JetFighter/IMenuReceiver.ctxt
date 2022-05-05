@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=IMenuReceiver
+comment0.text=\n\ Write\ a\ description\ of\ class\ IMenuReceiver\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=void\ doAction()
+comment1.text=Perform\ the\ Action\ for\ the\ Menu\ Choice
+numComments=2
