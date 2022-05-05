@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=Buttons
+comment0.text=\n\ Write\ a\ description\ of\ class\ Buttons\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=Buttons()
+comment10.params=buttonType
+comment10.target=MenuOption\ getButton(java.lang.String)
+comment2.params=
+comment2.target=void\ doAction()
+comment3.params=
+comment3.target=void\ doAction()
+comment4.params=
+comment4.target=void\ doAction()
+comment5.params=
+comment5.target=void\ doAction()
+comment6.params=
+comment6.target=greenfoot.GreenfootImage\ getPlay()
+comment7.params=
+comment7.target=greenfoot.GreenfootImage\ getSettings()
+comment8.params=
+comment8.target=greenfoot.GreenfootImage\ getBack()
+comment9.params=
+comment9.target=greenfoot.GreenfootImage\ getQuit()
+numComments=11
