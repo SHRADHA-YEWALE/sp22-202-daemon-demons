@@ -28,9 +28,10 @@ public class PostGame extends World
     
     private void prepare()
     {
-        
+        int score1 = JetOneScore.getScoreInstance().getScore();
+        int score2 = JetTwoScore.getScoreInstance().getScore();
         addObject(new GameOverText(), getWidth()/2, 100);
-        addObject(new WinnerBanner(0,1), getWidth()/2, getHeight()/2);
+        addObject(new WinnerBanner(score1, score2), getWidth()/2, getHeight()/2);
         addObject(new Continue(), getWidth()/2, 500);
         addObject(new ExitGame(), getWidth()/2, 570);
     }

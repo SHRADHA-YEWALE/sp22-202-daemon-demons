@@ -24,9 +24,9 @@ public class WinnerBanner extends PostGameActors
     
     public void updateImage(int score1, int score2){
         if(score1 == score2){
-            setImage(new GreenfootImage("GAME TIED", 60, Color.BLACK, Color.WHITE));
+            setImage(new GreenfootImage("GAME TIED", 60, Color.BLACK, new Color(0,0,0,0)));
         }else if(score1 > score2){
-            setImage(new GreenfootImage("PLAYER 1 WINS ", 60, Color.BLACK, Color.WHITE));
+            setImage(new GreenfootImage("PLAYER 1 WINS ", 60, Color.BLACK, new Color(0,0,0,0)));
         } else {
             setImage(new GreenfootImage("Player 2 Wins", 60, Color.BLACK, new Color(0,0,0,0)));
         }
