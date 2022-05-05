@@ -37,6 +37,11 @@ public class PostGame extends World
     }
     
     public void act(){
+        
+        if("enter".equals(Greenfoot.getKey())){
+           Greenfoot.setWorld(new MenuScreen()); 
+        } 
+        
         if("escape".equals(Greenfoot.getKey())){
             System.exit(0);
         } 
