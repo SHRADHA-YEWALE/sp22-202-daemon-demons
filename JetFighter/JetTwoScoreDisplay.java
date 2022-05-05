@@ -39,8 +39,7 @@ public class JetTwoScoreDisplay extends Actor
     public JetTwoScoreDisplay() {}
     
     public void displayScore(int score) {
-        jetTwoScoreText = new GreenfootImage(" " + score, 30, Color.WHITE, transparent);
-        jetTwoScoreText.scale(110, 60);
+        jetTwoScoreText = new GreenfootImage(" " + score, 65, Color.WHITE, transparent);
         setImage(jetTwoScoreText);
     }
     

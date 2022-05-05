@@ -43,7 +43,7 @@ public class GameScreen extends World
     }
     
     public void act(){
-        imageCount -= 2;
+        imageCount -= 3;
         animateImage(background);
     }
     
