@@ -37,7 +37,7 @@ public class PostGame extends World
     
     public void act(){
         if("escape".equals(Greenfoot.getKey())){
-            System.exit(1);
+            System.exit(0);
         } 
     }
 }
