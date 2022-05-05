@@ -33,18 +33,30 @@ public class MenuScreen extends World
         addObject(logo, 200, 130);
         logo.setLocation(440,175);
         
-        Play play = new Play();
-        addObject(play,259,160);
+        Buttons buttons = new Buttons();
         
-        Settings settings = new Settings();
-        addObject(settings,270,278);
+        MenuOption play = buttons.getButton("Play");
+        addObject(play, 450, 340);
+        
+        MenuOption settings = buttons.getButton("Settings");
+        addObject(settings, 450, 415);
+        
+        MenuOption quit = buttons.getButton("Quit");
+        addObject(quit, 450, 440);
+        
+        
+        //Play play = new Play();
+        //addObject(play,259,160);
+        
+        //Settings settings = new Settings();
+        //addObject(settings,270,278);
 
-        Quit quit = new Quit();
-        addObject(quit,287,353);
+        //Quit quit = new Quit();
+        ///addObject(quit,287,353);
         
-        play.setLocation(450, 340);
-        settings.setLocation(450, 415);
-        quit.setLocation(450, 440);
+        //play.setLocation(450, 340);
+        //settings.setLocation(450, 415);
+        //quit.setLocation(450, 440);
         
     }
     
