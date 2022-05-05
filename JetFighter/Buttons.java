@@ -13,7 +13,7 @@ public class Buttons
 
     private static final GreenfootSound clickSound = new GreenfootSound("menu_option.wav");
     
-        public Buttons() {
+    public Buttons() {
         optionsImageMap = new HashMap<>();
         optionsCommandMap = new HashMap<>();
 
@@ -54,8 +54,8 @@ public class Buttons
         quitCommand.setReceiver(new IMenuReceiver() {
             public void doAction() {
                 clickSound.play();
-                Greenfoot.stop();
-                System.exit(1);  // quits game       
+                //Greenfoot.stop();
+                System.exit(0);  // quits game       
             }
         });
         optionsCommandMap.put("Quit", quitCommand);
@@ -79,7 +79,7 @@ public class Buttons
         return settingsButton;
     }
     
-     public GreenfootImage getBack(){
+    public GreenfootImage getBack(){
         GreenfootImage backButton =  new GreenfootImage(120,70);
         Font adjustedFont = new Font(true, false, 30);
         backButton.setFont(adjustedFont);
@@ -88,7 +88,7 @@ public class Buttons
         return backButton;
     }
     
-     public GreenfootImage getQuit(){
+    public GreenfootImage getQuit(){
         GreenfootImage quitButton =  new GreenfootImage(100,60);
         Font adjustedFont = new Font("Marlboro",true, false, 30);
         quitButton.setFont(adjustedFont);
@@ -97,7 +97,7 @@ public class Buttons
         return quitButton;
     }
     
-        public MenuOption getButton(String buttonType) {
+    public MenuOption getButton(String buttonType) {
         GreenfootImage image = optionsImageMap.get(buttonType);
         IMenuCommand cmd = optionsCommandMap.get(buttonType);
 

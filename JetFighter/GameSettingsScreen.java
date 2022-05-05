@@ -40,7 +40,11 @@ public class GameSettingsScreen extends World
         addObject(new JetSpeedLabel(), 460, 490);
         addObject(new JetIncrementSpeedButton(), 510,490); 
         
-        addObject(new Back(),160,500);
+        Buttons buttons = new Buttons();
+        MenuOption back = buttons.getButton("Back");
+        addObject(back, 160, 500);
+        
+        //addObject(new Back(),160,500);
         
     }
 }
