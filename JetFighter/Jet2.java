@@ -22,6 +22,8 @@ public class Jet2 extends Jet implements IDetectHitSubject
     public void act() {
         super.act();
         if(isTouching(Bullet1.class)) {
+            System.out.println("HITTTTTTTTT--2");
+
             notifyObservers();
         }
         JetOneScoreDisplay.getInstance().updateScoreDisplay();

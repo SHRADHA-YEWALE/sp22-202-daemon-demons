@@ -44,6 +44,7 @@ public class JetTwoScoreDisplay extends Actor
     }
     
     public void updateScoreDisplay() {
+        System.out.println("Current updated score for jet 2"+JetTwoScore.getScoreInstance().getScore());
         displayScore(JetTwoScore.getScoreInstance().getScore());
     }
 }
