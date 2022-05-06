@@ -8,6 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Bullet2 extends Bullet
 {
+    private static Bullet2 bullet2;
+
     public Bullet2() {
         super();
     }

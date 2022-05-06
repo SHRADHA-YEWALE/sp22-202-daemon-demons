@@ -21,9 +21,11 @@ public class Jet2 extends Jet implements IDetectHitSubject
     
     public void act() {
         super.act();
-        if(isTouching(Bullet1.class)) {
+        System.out.println("Jet2 hit not detected--in progress");
+        Actor b1 = getOneIntersectingObject(Bullet1.class);
+        if(b1 != null) {
             System.out.println("HITTTTTTTTT--2");
-
+            getWorld().removeObject(b1);
             notifyObservers();
         }
         JetOneScoreDisplay.getInstance().updateScoreDisplay();
