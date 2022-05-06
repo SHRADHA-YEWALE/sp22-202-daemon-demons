@@ -10,6 +10,8 @@ public class Continue extends PostGameActors
 {
     public Continue(){
         updateImage();
+        JetOneScore.getScoreInstance().resetScore();
+        JetTwoScore.getScoreInstance().resetScore();
     }
     
     /**
