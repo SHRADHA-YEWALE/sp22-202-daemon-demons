@@ -8,12 +8,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Bullet1 extends Bullet
 {
+    private static Bullet1 bullet1;
+
     public Bullet1() {
         super();
     }
     
     public Bullet1(int speed) {
         super(speed);
-    }
-    
+    }    
 }
