@@ -21,6 +21,8 @@ public class MyWorld extends World
     
     public void act(){
         Greenfoot.setWorld(new TitleScreen());
+        JetOneScore.getScoreInstance().resetScore();
+        JetTwoScore.getScoreInstance().resetScore();
         JetOneScoreDisplay.getInstance().updateScoreDisplay();
         JetTwoScoreDisplay.getInstance().updateScoreDisplay();
     }

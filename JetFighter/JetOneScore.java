@@ -35,6 +35,10 @@ public class JetOneScore extends ScoreCard
         return score;
     }
     
+    public void resetScore() {
+        score = 0;
+    }
+    
     public void updateScore() {
         JetOneScore.getScoreInstance().setScore();   
     }
