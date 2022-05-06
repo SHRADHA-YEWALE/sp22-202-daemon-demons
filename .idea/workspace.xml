@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="682b14f8-9b85-4d9a-9f5f-af202eab2c06" name="Changes" comment="" />
+    <list default="true" id="682b14f8-9b85-4d9a-9f5f-af202eab2c06" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/JetFighter/JetOneScore.class" beforeDir="false" afterPath="$PROJECT_DIR$/JetFighter/JetOneScore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JetFighter/JetOneScore.ctxt" beforeDir="false" afterPath="$PROJECT_DIR$/JetFighter/JetOneScore.ctxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JetFighter/JetOneScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/JetFighter/JetOneScore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JetFighter/JetTwoScore.class" beforeDir="false" afterPath="$PROJECT_DIR$/JetFighter/JetTwoScore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JetFighter/JetTwoScore.ctxt" beforeDir="false" afterPath="$PROJECT_DIR$/JetFighter/JetTwoScore.ctxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JetFighter/JetTwoScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/JetFighter/JetTwoScore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JetFighter/MyWorld.class" beforeDir="false" afterPath="$PROJECT_DIR$/JetFighter/MyWorld.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JetFighter/MyWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/JetFighter/MyWorld.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
