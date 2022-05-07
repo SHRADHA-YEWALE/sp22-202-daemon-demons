@@ -43,8 +43,5 @@ public class GameSettingsScreen extends World
         Buttons buttons = new Buttons();
         MenuOption back = buttons.getButton("Back");
         addObject(back, 160, 500);
-        
-        //addObject(new Back(),160,500);
-        
     }
 }

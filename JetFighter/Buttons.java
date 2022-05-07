@@ -12,8 +12,8 @@ public class Buttons
     private final HashMap<String, IMenuCommand> optionsCommandMap;
 
     private static final GreenfootSound clickSound = new GreenfootSound("menu_option.wav");
-    
-        public Buttons() {
+
+    public Buttons() {
         optionsImageMap = new HashMap<>();
         optionsCommandMap = new HashMap<>();
 
@@ -21,44 +21,52 @@ public class Buttons
         optionsImageMap.put("Settings", getSettings());
         optionsImageMap.put("Back", getBack());
         optionsImageMap.put("Quit", getQuit());
-        
+
         IMenuCommand playCommand = new MenuCommand();
         playCommand.setReceiver(new IMenuReceiver() {
-            public void doAction() {
-                clickSound.play();
-                Greenfoot.setWorld(new GameScreen());    
-            }
-        });
+                public void doAction() {
+                    clickSound.play();
+                    if (Player.getPlayer1Name().equals("Player 1")) {
+                        String player1 = Greenfoot.ask("Enter Player 1 Name:");
+                        Player.setPlayer1Name(player1);
+                    }
+                    if (Player.getPlayer2Name().equals("Player 2")) {
+                        String player2 = Greenfoot.ask("Enter Player 2 Name:");
+                        Player.setPlayer2Name(player2);
+                    }
+                    Greenfoot.setWorld(new GameScreen());    
+                }
+            });
         optionsCommandMap.put("Play", playCommand);
 
         IMenuCommand settingsCommand = new MenuCommand();
         settingsCommand.setReceiver(new IMenuReceiver() {
-            public void doAction() {
-                clickSound.play();
-                Greenfoot.setWorld(new GameSettingsScreen());
-            }
-        });
+                public void doAction() {
+                    clickSound.play();
+                    Greenfoot.setWorld(new GameSettingsScreen());
+                }
+            });
         optionsCommandMap.put("Settings", settingsCommand);
-        
+
         IMenuCommand backCommand = new MenuCommand();
         backCommand.setReceiver(new IMenuReceiver() {
-            public void doAction() {
-                clickSound.play();
-                Greenfoot.setWorld(new MenuScreen());
-            }
-        });
+                public void doAction() {
+                    clickSound.play();
+                    Greenfoot.setWorld(new MenuScreen());
+                }
+            });
         optionsCommandMap.put("Back", backCommand);
 
         IMenuCommand quitCommand = new MenuCommand();
         quitCommand.setReceiver(new IMenuReceiver() {
-            public void doAction() {
-                clickSound.play();
-                System.exit(0);  // quits game       
-            }
-        });
+                public void doAction() {
+                    clickSound.play();
+                    System.exit(0);  // quits game       
+                }
+            });
         optionsCommandMap.put("Quit", quitCommand);
     }
-    
+
     public GreenfootImage getPlay(){
         GreenfootImage playButton =  new GreenfootImage(100,60);
         Font adjustedFont = new Font(true, false, 30);
@@ -67,7 +75,7 @@ public class Buttons
         playButton.drawString("Play", 0, 50);
         return playButton;
     }
-    
+
     public GreenfootImage getSettings(){
         GreenfootImage settingsButton =  new GreenfootImage(165,115);
         Font adjustedFont = new Font(true, false, 30);
@@ -76,7 +84,7 @@ public class Buttons
         settingsButton.drawString("Settings", 0, 50);
         return settingsButton;
     }
-    
+
     public GreenfootImage getBack(){
         GreenfootImage backButton =  new GreenfootImage(120,70);
         Font adjustedFont = new Font(true, false, 30);
@@ -85,7 +93,7 @@ public class Buttons
         backButton.drawString("Back", 0, 50);
         return backButton;
     }
-    
+
     public GreenfootImage getQuit(){
         GreenfootImage quitButton =  new GreenfootImage(100,60);
         Font adjustedFont = new Font("Marlboro",true, false, 30);
@@ -94,7 +102,7 @@ public class Buttons
         quitButton.drawString("Quit", 0, 50);
         return quitButton;
     }
-    
+
     public MenuOption getButton(String buttonType) {
         GreenfootImage image = optionsImageMap.get(buttonType);
         IMenuCommand cmd = optionsCommandMap.get(buttonType);
