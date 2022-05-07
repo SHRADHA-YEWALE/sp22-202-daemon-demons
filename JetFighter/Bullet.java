@@ -8,7 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Bullet extends Actor
 {   
-    //private int timer = 4;
     private static int speed = 6;
     private int range = 600;
     
@@ -53,11 +52,7 @@ public class Bullet extends Actor
             getWorld().removeObject(this);
         }
         else {
-            range = range - 1;
-            if(getWorld()!= null){
-                getWorld().removeObjects(getWorld().getObjects(Explosion.class));    
-            }
-            
+            range = range - 1;     
         }
     }
     
