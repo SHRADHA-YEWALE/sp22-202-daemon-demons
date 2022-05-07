@@ -8,9 +8,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Bullet extends Actor
 {   
+    //private int timer = 4;
     private static int speed = 6;
     private int range = 600;
     
+    public GreenfootSound explosionSound= new GreenfootSound("explosion.mp3");
     public enum BOUNDS{
         IN_BOUNDS, TOP, RIGHT, BOTTOM, LEFT
     };
@@ -47,10 +49,15 @@ public class Bullet extends Actor
     
     public void countdown() {
         if (range <= 0 ) {
+            explode();
             getWorld().removeObject(this);
         }
         else {
             range = range - 1;
+            if(getWorld()!= null){
+                getWorld().removeObjects(getWorld().getObjects(Explosion.class));    
+            }
+            
         }
     }
     
@@ -81,6 +88,25 @@ public class Bullet extends Actor
     public void scale(){
         GreenfootImage bulletImage = getImage();
         bulletImage.scale(10, 10);
+    }
+    
+    public void explode(){
+        int x = getX();
+        int y = getY(); 
+        
+        World w = getWorld();
+        
+        int fireBalls = 4;
+        int rotationSpread = 360/fireBalls;
+        
+        
+        for(int angle =0; angle < 360; angle += rotationSpread){
+            Explosion e = new Explosion();
+            e.setRotation(angle);
+            w.addObject(e, x, y);
+            explosionSound.play();
+            //timer--;
+        } 
     }
     
 }
