@@ -1,9 +1,9 @@
 #BlueJ class context
 comment0.target=IMenuInvoker
-comment0.text=\n\ Write\ a\ description\ of\ class\ IMenuInvoker\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ IMenuInvoker\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=c
 comment1.target=void\ setCommand(IMenuCommand)
-comment1.text=\n\ Set\ Command\ for\ Invoker\n\ @param\ c\ Command\ Object\n
+comment1.text=\r\n\ Set\ Command\ for\ Invoker\r\n\ @param\ c\ Command\ Object\r\n
 comment2.params=
 comment2.target=void\ invoke()
 comment2.text=Invoke\ Menu\ Function

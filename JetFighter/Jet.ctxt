@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Jet
-comment0.text=\n\ Write\ a\ description\ of\ class\ Jet\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Jet\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=mode
 comment1.target=Jet(int)
 comment10.params=
@@ -35,7 +35,7 @@ comment4.params=
 comment4.target=int\ getJetSpeed()
 comment5.params=
 comment5.target=void\ act()
-comment5.text=\n\ Act\ -\ do\ whatever\ the\ Jet\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+comment5.text=\r\n\ Act\ -\ do\ whatever\ the\ Jet\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
 comment6.params=
 comment6.target=void\ shoot()
 comment7.params=

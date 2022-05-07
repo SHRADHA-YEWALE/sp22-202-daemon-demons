@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Bullet extends Actor
 {   
     private static int speed = 6;
-    private int range = 600;
+    private int range = 1200;
     
     public GreenfootSound explosionSound= new GreenfootSound("explosion.mp3");
     public enum BOUNDS{
