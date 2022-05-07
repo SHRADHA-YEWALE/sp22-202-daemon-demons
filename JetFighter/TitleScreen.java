@@ -37,7 +37,7 @@ public class TitleScreen extends World
     }
 
     public void act(){ 
-        backgroundMusic.play();
+        backgroundMusic.playLoop();
         imageCount -= 4;
         animateImage(background);
         if("enter".equals(Greenfoot.getKey())){
