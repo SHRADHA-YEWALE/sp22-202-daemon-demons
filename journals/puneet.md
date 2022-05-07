@@ -59,7 +59,7 @@ Every team member was asked his opinion/ideas on the progress of the project so 
 ### XP value - Communication
 Every team member has been openly communicating their ideas and concerns related to the project. In all the meetings so far, all team members have been communicating their tasks completed, tasks scheduled and blockers effectively. During the meeting, every team member was encorage to add ideas to increase the scope of the project and collaborate together to finish the remainings tasks. The next meeting tasks and agenda were also communicated effectively in this meeting.
 
-## Week 4 (April 24th - April 30th)
+## Week 4 (May 1st - May 7th)
 
 ### Tasks worked on
 * Implemented the Command Design pattern for the Menu screen
