@@ -42,7 +42,7 @@ Every team member was asked his opinion/ideas on the progress of the project so 
 ## Week 3 (April 24th - April 30th)
 
 ### Tasks worked on
-* Implemented the me screen
+* Implemented the menu screen
 * Added components for the settings screen
 * Fixed bugs in the game settings screen
 * Added transitions from menu screen to the game play screen
@@ -58,3 +58,25 @@ Every team member was asked his opinion/ideas on the progress of the project so 
 
 ### XP value - Communication
 Every team member has been openly communicating their ideas and concerns related to the project. In all the meetings so far, all team members have been communicating their tasks completed, tasks scheduled and blockers effectively. During the meeting, every team member was encorage to add ideas to increase the scope of the project and collaborate together to finish the remainings tasks. The next meeting tasks and agenda were also communicated effectively in this meeting.
+
+## Week 4 (April 24th - April 30th)
+
+### Tasks worked on
+* Implemented the Command Design pattern for the Menu screen
+* Added the Explosion class and Player class
+* Added code to animate the explosion when the bullet is shot
+* Fixed bugs in the score display class
+* Added assets for explosion and bullets
+* Removed reduntant files in the Menu class after implementing Command pattern
+
+### Tasks planned
+* Fix minor bugs
+* Work on user story video
+* Work on the demo video
+* Test the entire game
+
+### Blockers
+* None
+
+### XP value - Communication
+All the team members communicated their thoughts on the completion of the project. We also discussed the learning outcomes of the project and working with Greenfoot. Team discussed the next steps and planned to work on the user story video, demo video and UML diagrams. There was also communicatiov by each team members in regards to the overall game design and how design patterns were useful in the project.
