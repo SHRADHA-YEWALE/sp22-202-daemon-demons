@@ -52,3 +52,20 @@ Everyone has been respectful in both the standups and online communication. Ever
 
 ### XP Value: Respect
 Everyone has been respectful in both the standups and online communication. Sugggestions and explanations are done with respect and no one is left feeling belittled or attacked. 
+
+## Week 4 (May 1st to May 7th)
+
+### Completed
+* Bullet Cooldown
+* Work with others for integration
+* * modeify bullet range
+
+### Current Work
+* Fill out readme design pattern
+* work on videos
+
+### Blockers
+* None
+
+### XP Value: Respect
+Everyone has been respectful in both the standups and online communication. Sugggestions and explanations are done with respect and no one is left feeling belittled or attacked. 
