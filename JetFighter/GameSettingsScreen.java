@@ -8,7 +8,8 @@ import java.lang.String;
  */
 public class GameSettingsScreen extends World
 {
-
+    GreenfootImage background = new GreenfootImage("startScreen.jpg");
+    private int imageCount = 0;
     /**
      * Constructor for objects of class GameSettingsScreen.
      * 
@@ -43,5 +44,19 @@ public class GameSettingsScreen extends World
         Buttons buttons = new Buttons();
         MenuOption back = buttons.getButton("Back");
         addObject(back, 160, 500);
+    }
+    
+    public void act(){
+        imageCount -= 4;
+        animateImage(background);
+    }
+    
+    public void animateImage(GreenfootImage image) {
+        if (imageCount <  -image.getWidth()) {
+            imageCount += image.getWidth();
+        }
+        int temp = imageCount;
+        getBackground().drawImage(image, temp, 0);
+        getBackground().drawImage(image, temp + image.getWidth(), 0);
     }
 }

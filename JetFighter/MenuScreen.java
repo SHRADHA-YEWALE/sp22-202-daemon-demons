@@ -38,11 +38,14 @@ public class MenuScreen extends World
         MenuOption play = buttons.getButton("Play");
         addObject(play, 450, 340);
         
+        MenuOption instructions = buttons.getButton("Instructions");
+        addObject(instructions, 450, 435);
+        
         MenuOption settings = buttons.getButton("Settings");
-        addObject(settings, 450, 415);
+        addObject(settings, 450, 465);
         
         MenuOption quit = buttons.getButton("Quit");
-        addObject(quit, 450, 440);
+        addObject(quit, 450, 490);
 
     }
     
@@ -50,6 +53,7 @@ public class MenuScreen extends World
         imageCount -= 4;
         animateImage(background);
     }
+    
     public void animateImage(GreenfootImage image) {
         if (imageCount <  -image.getWidth()) {
             imageCount += image.getWidth();
