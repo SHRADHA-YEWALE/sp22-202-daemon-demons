@@ -8,7 +8,10 @@ Shradha Yewale
 
 ## Journals/Contributions
 ### Dylan Nguyen 
-[Journal](./journals/dylan.md)
+[Journal](./journals/dylan.md)  
+Worked primarily on the jet and the bullet components. This involved movement, shooting, and overall behavior such as bullet fire rate and range. 
+In addition, worked to create an easier means of detecting hits and updating score by generating subclasses of Jet and Bullet.
+Implemented strategy pattern for the jet movement controls, with the different control schemes being different strategies.
 ### Puneet Tokhi 
 [Journal](./journals/puneet.md)
 ### Sandesh Gupta 
