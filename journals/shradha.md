@@ -84,16 +84,27 @@ No Blockers.
 ### XP Value : Team Feedback
 All team members worked on their respective features. The observer pattern I have implemented was not much fitted with overall implementation. After doing analysis, I have given feedback of my analysis to Dylan(as he was implementing Jet & Bullet features). We had a quick zoom meeting to discuss on how after hitting bullets to jets will detect the hit and update repective scores. After getting feedback of the Jet& bullet implementation , we have changed the design for jet, bullet and for score also. I tried to finish the implementation and design of score feature with observer pattern.
 
-## Week 4 (April 10th to April 16th)
+## Week 4 (May 1st to May 7th)
 
 ### Finished last week
-
+1. Integrate update score for jet1 & jet2
+2. Integrate score display on screen score for jet1 & jet2
+3. Testing of update score and score display for jet1 & jet
+4. Reset score after game over and game continue menu
 
 ### Time spend
-
+* Task 1 : 5 hrs
+* Task 2 : 6 hr
+* Task 3 : 5 hrs
+* Task 4 : 1 hrs
 
 ### Planned next week
+* Code clean and javadoc for each methods
+* Draw deployment diagram
+* Update README.md with information
 
 ### Blocker
+No Blockers
 
-
+### XP Value : Team Feedback
+This week all team members were mostly working on integrating their features with the game. The majority of tasks include integration and testing of the features along with whole functionality of game. All team memebers gathering the information and feedback from other team members to get information and feedback about the feature they worked on in order to integrate it with their own feature. I integrated my score feature in the game and co-ordinate with sandesh and dylan to understand Jet, Bullet and Timer feature. I also tested update score and display score for jet1 & jet2 with all edge case scenarios. Moreover, while testing the whole game, I got to know that the score of the players were not reseting to 0. So I also implemented the reset score feature. I performed the testing everytime I was adding any new feature or making code change. I have given feedback to other team mates about few bugs and defects I encountered during the testing of features. Other team mates has also given me feedback about the score not updating or wrongly updating. I fixed all the defects in score feature.
