@@ -18,6 +18,7 @@ public class Buttons
             optionsCommandMap = new HashMap<>();
 
             optionsImageMap.put("Play", getPlay());
+            optionsImageMap.put("Instructions", getInstructions());
             optionsImageMap.put("Settings", getSettings());
             optionsImageMap.put("Back", getBack());
             optionsImageMap.put("Quit", getQuit());
@@ -26,14 +27,13 @@ public class Buttons
             playCommand.setReceiver(new IMenuReceiver() {
                     public void doAction() {
                         clickSound.play();
-                        if (Player.getPlayer1Name().equals("Player 1")) {
-                            String player1 = Greenfoot.ask("Enter Player 1 Name:");
-                            Player.setPlayer1Name(player1);
-                    }
-                        if (Player.getPlayer2Name().equals("Player 2")) {
-                            String player2 = Greenfoot.ask("Enter Player 2 Name:");
-                            Player.setPlayer2Name(player2);
-                    }
+                        // Get Player 1 name
+                        String player1 = Greenfoot.ask("Enter Player 1 Name:");
+                        Player.setPlayer1Name(player1);
+                        // Get Player 2 name
+                        String player2 = Greenfoot.ask("Enter Player 2 Name:");
+                        Player.setPlayer2Name(player2);
+                        
                         Greenfoot.setWorld(new GameScreen());    
                 }
             });
@@ -47,6 +47,15 @@ public class Buttons
                     }
             });
             optionsCommandMap.put("Settings", settingsCommand);
+            
+            IMenuCommand instructionsCommand = new MenuCommand();
+            instructionsCommand.setReceiver(new IMenuReceiver() {
+                    public void doAction() {
+                        clickSound.play();
+                        Greenfoot.setWorld(new InstructionsScreen());
+                    }
+            });
+            optionsCommandMap.put("Instructions", instructionsCommand);
 
             IMenuCommand backCommand = new MenuCommand();
             backCommand.setReceiver(new IMenuReceiver() {
@@ -74,6 +83,15 @@ public class Buttons
             playButton.setColor(Color.WHITE);
             playButton.drawString("Play", 0, 50);
             return playButton;
+        }
+        
+        public GreenfootImage getInstructions(){
+            GreenfootImage instructionsButton =  new GreenfootImage(205,155);
+            Font adjustedFont = new Font("Marlboro",true, false, 30);
+            instructionsButton.setFont(adjustedFont);
+            instructionsButton.setColor(Color.WHITE);
+            instructionsButton.drawString("Instructions", 0, 50);
+            return instructionsButton;
         }
 
         public GreenfootImage getSettings(){
