@@ -23,16 +23,19 @@ public class WinnerBanner extends PostGameActors
     
     
     public void updateImage(int score1, int score2){
-        String player1 = new Player().getPlayer1Name();
-        String player2 = new Player().getPlayer2Name();
+        Player player1 = new Player();
+        Player player2 = new Player();
+
         if(score1 == score2){
             setImage(new GreenfootImage("GAME TIED", 60, Color.BLACK, new Color(0,0,0,0)));
         }else if(score1 > score2){
-            setImage(new GreenfootImage("Congratulations "+player1 + ", you WIN!!!", 60, Color.BLACK, new Color(0,0,0,0)));
+            setImage(new GreenfootImage("Congratulations "+player1.getPlayer1Name() + ", you WIN!!!", 60, Color.BLACK, new Color(0,0,0,0)));
         } else {
-            setImage(new GreenfootImage("Congratulations "+ player2 + ", you WIN!!!", 60, Color.BLACK, new Color(0,0,0,0)));
+            setImage(new GreenfootImage("Congratulations "+ player2.getPlayer2Name() + ", you WIN!!!", 60, Color.BLACK, new Color(0,0,0,0)));
         }
         
+        player1.setPlayer1Name("Player 1");
+        player2.setPlayer2Name("Player 2");
         
     }
 }
