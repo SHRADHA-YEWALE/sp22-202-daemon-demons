@@ -23,6 +23,13 @@ Implemented strategy pattern for the jet movement controls, with the different c
 
 ## Summary
 
+## Key Features
+
+## Task Sheet & Burndown
+[Task Sheet](https://docs.google.com/spreadsheets/d/1RcyCSWCNy9yeMHt_llLNDZoZeZGewSY5GR5uJhFoxaU/edit?usp=sharing)  
+![](documentation/Burndown.png)  
+Burndown chart finishes task before final date as the final week devoted to preparing for project submission and demo.
+
 ## Architecture Diagram
 
 [Lucid chart](https://lucid.app/lucidchart/8a2b83f8-d4c5-4b58-b0b7-eb1032640ead/edit?invitationId=inv_16fc3e19-db7b-4333-bfc4-c52e307b5293)
@@ -40,8 +47,6 @@ Implemented strategy pattern for the jet movement controls, with the different c
 | Settings | ![](documentation/wireframes/3-Settings-2x.png) |
 | Game | ![](documentation/wireframes/4-Game-2x.png) |
 | Post Game | ![](documentation/wireframes/5-Post_Game-2x.png) | 
-
-## Key Features
 
 
 
