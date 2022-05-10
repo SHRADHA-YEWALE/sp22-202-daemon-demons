@@ -59,12 +59,20 @@ Team members showed courage by adding additional features like multiplayer jets.
 ## Week 4 (May 01st to May 07th)
 
 ### Tasks worked on
-
+* Integrated assets to game
+* Implemented timer using decorator pattern
+* Timer integration with game
+* Post-game screen
+* Settings - Reflect speed changes in the game
 
 ### Tasks planned
-
+* Add validation to speed change rules
+* Refactor code
+* User story video
+* Documentation - Readme
 
 ### Blockers
-
+* None
 
 ### XP value - Courage
+Everyone showed courage by bringing new ideas for the demo video and the plan going ahead. 
