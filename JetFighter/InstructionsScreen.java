@@ -28,9 +28,21 @@ public class InstructionsScreen extends World
         gameLogo.scale(350,350);
         addObject(new Logo(gameLogo), 440, 140);
         
+        GreenfootImage instructions = new GreenfootImage("\nINSTRUCTIONS",
+        40, Color.WHITE, new Color(0, 0, 0, 0));
+        addObject(new Logo(instructions), 440, 250);
+        
+        String player1Instructions = "\nPlayer 1: \n Use the arrow keys (Up, Down, Left, Right) to move the Jet \n Use the 'Up' arrow key to fire the bullet \n\n";
+        
+        String player2Instructions = " Player 2: \n Use the W, A, S, D keys to move the Jet\n Use the 'W' key to fire the bullet";
+        
+        GreenfootImage instructionsImage = new GreenfootImage(player1Instructions + player2Instructions, 30, Color.CYAN, new Color(0, 0, 0, 0));
+        addObject(new Logo(instructionsImage), 440, 400);
+        
+        
         Buttons buttons = new Buttons();
         MenuOption back = buttons.getButton("Back");
-        addObject(back, 440, 500);
+        addObject(back, 460, 570);
     }
     
     public void act(){
