@@ -1,49 +1,48 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-import java.lang.String;
+
 /**
- * Write a description of class GameSettingsScreen here.
+ * Write a description of class InstructionsScreen here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class GameSettingsScreen extends World
+public class InstructionsScreen extends World
 {
     GreenfootImage background = new GreenfootImage("startScreen.jpg");
     private int imageCount = 0;
+    
     /**
-     * Constructor for objects of class GameSettingsScreen.
+     * Constructor for objects of class InstructionsScreen.
      * 
      */
-    public GameSettingsScreen()
+    public InstructionsScreen()
     {    
+        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(900, 650, 1); 
         prepare();
     }
-
     
-    /**
-     * Prepare the world for the start of the program.
-     * That is: create the initial objects and add them to the world.
-     */
     private void prepare()
     {
         GreenfootImage gameLogo = new GreenfootImage("logo_white.png");
         gameLogo.scale(350,350);
         addObject(new Logo(gameLogo), 440, 140);
-       
-        addObject(new BulletSpeed(), 200, 420);
-        addObject( new BulletDecrementSpeedButton(), 420, 420);
-        addObject(new BulletSpeedLabel(), 460, 420);
-        addObject(new BulletIncrementSpeedButton(), 510, 420); 
         
-        addObject(new JetSpeed(),200, 490);
-        addObject( new JetDecrementSpeedButton(), 420, 490);
-        addObject(new JetSpeedLabel(), 460, 490);
-        addObject(new JetIncrementSpeedButton(), 510,490); 
+        GreenfootImage instructions = new GreenfootImage("\nINSTRUCTIONS",
+        40, Color.WHITE, new Color(0, 0, 0, 0));
+        addObject(new Logo(instructions), 440, 250);
+        
+        String player1Instructions = "\nPlayer 1: \n Use the arrow keys (Up, Down, Left, Right) to move the Jet \n Use the 'Up' arrow key to fire the bullet \n\n";
+        
+        String player2Instructions = " Player 2: \n Use the W, A, S, D keys to move the Jet\n Use the 'W' key to fire the bullet";
+        
+        GreenfootImage instructionsImage = new GreenfootImage(player1Instructions + player2Instructions, 30, Color.CYAN, new Color(0, 0, 0, 0));
+        addObject(new Logo(instructionsImage), 440, 400);
+        
         
         Buttons buttons = new Buttons();
         MenuOption back = buttons.getButton("Back");
-        addObject(back, 160, 500);
+        addObject(back, 460, 570);
     }
     
     public void act(){
