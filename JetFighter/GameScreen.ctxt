@@ -10,4 +10,6 @@ comment3.params=
 comment3.target=void\ act()
 comment4.params=image
 comment4.target=void\ animateImage(greenfoot.GreenfootImage)
-numComments=5
+comment5.params=arr
+comment5.target=int\ getRandom(java.lang.String[])
+numComments=6

@@ -7,8 +7,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @version (a version number or a date)
  */
 public class PostGame extends World
-{
-
+{    
     /**
      * Constructor for objects of class PostGame.
      * 
@@ -36,8 +35,8 @@ public class PostGame extends World
         addObject(new ExitGame(), getWidth()/2, 570);
     }
     
-    public void act(){
-        
+    public void act()
+    {
         if("enter".equals(Greenfoot.getKey())){
            Greenfoot.setWorld(new MenuScreen()); 
         } 
