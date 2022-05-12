@@ -20,8 +20,15 @@ public class BulletIncrementSpeedButton extends GameSettingsOptions
     public void act()
     {
         checkMouse();
-        if(Greenfoot.mouseClicked(this) && GameConfig.bulletSpeed > 0){
+        if(Greenfoot.mouseClicked(this) && validSpeed()){
             GameConfig.bulletSpeed++;
         }
+    }
+    
+    private boolean validSpeed(){
+        if(GameConfig.bulletSpeed > 0 && GameConfig.bulletSpeed < 10){
+            return true;
+        }
+        return false;
     }
 }

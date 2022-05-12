@@ -20,9 +20,17 @@ public class JetIncrementSpeedButton extends GameSettingsOptions
     public void act()
     {
         checkMouse();
-        if(Greenfoot.mouseClicked(this) && GameConfig.jetSpeed > 0){
+        if(Greenfoot.mouseClicked(this) && validSpeed()){
             GameConfig.jetSpeed++;
         }
+    }
+    
+    
+    private boolean validSpeed(){
+        if(GameConfig.jetSpeed > 0 && GameConfig.jetSpeed < 10){
+            return true;
+        }
+        return false;
     }
 
 }
