@@ -6,12 +6,17 @@ Puneet Tokhi
 Sandesh Gupta  
 Shradha Yewale  
 
+## Summary
+Jet fighter is a local multiplayer jet fighting game. Two players on the same keyboard control their own jet and try to shoot the other jet. The person who 
+hits the other the most wins. Developed using Java and Greenfoot from scratch.
+
 ## Journals/Contributions
 ### Dylan Nguyen 
 [Journal](./journals/dylan.md)  
-Worked primarily on the jet and the bullet components. This involved movement, shooting, and overall behavior such as bullet fire rate and range. 
-In addition, worked to create an easier means of detecting hits and updating score by generating subclasses of Jet and Bullet.
-Implemented strategy pattern for the jet movement controls, with the different control schemes being different strategies.
+* Worked primarily on the `Jet` and the `Bullet` components. This involved movement, shooting, and overall behavior such as bullet fire rate and range. 
+* Made subclasses `Jet1`, `Jet2`, `Bullet1`, and `Bullet2` to make hit detection and score updates easier.
+* Used `Strategy Pattern` to make the different control schemes of arrow keys and WASD.
+* Made Demo video
 ### Puneet Tokhi 
 [Journal](./journals/puneet.md)
 * Worked on implementing the `Menu`, `Instructions`, `Settings` and `GameSettings` screen
@@ -44,8 +49,6 @@ Implemented strategy pattern for the jet movement controls, with the different c
 ![Winner](/JetFighter/Screenshots/Winner.png)
 
 ## Videos
-
-## Summary
 
 ## Key Features
 
