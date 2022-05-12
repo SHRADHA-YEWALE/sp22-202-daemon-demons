@@ -14,8 +14,9 @@ hits the other the most wins. Developed using Java and Greenfoot from scratch.
 ### Dylan Nguyen 
 [Journal](./journals/dylan.md)  
 * Worked primarily on the `Jet` and the `Bullet` components. This involved movement, shooting, and overall behavior such as bullet fire rate and range. 
+* Made the `Jet` class available to alteration for different settings 
 * Made subclasses `Jet1`, `Jet2`, `Bullet1`, and `Bullet2` to make hit detection and score updates easier.
-* Used `Strategy Pattern` to make the different control schemes of arrow keys and WASD.
+* Used `Strategy Pattern` with `IMovementStrategy` to make the different control schemes of arrow keys and WASD.
 * Made Demo video
 ### Puneet Tokhi 
 [Journal](./journals/puneet.md)
@@ -51,6 +52,9 @@ hits the other the most wins. Developed using Java and Greenfoot from scratch.
 ## Videos
 
 ## Key Features
+* Player controlled Jets that turn and shoot
+* A score and timer system that determines the winner of the game
+* Game settings that allows players to change teh speed of the bullets and jets
 
 ## Task Sheet & Burndown
 [Task Sheet](https://docs.google.com/spreadsheets/d/1RcyCSWCNy9yeMHt_llLNDZoZeZGewSY5GR5uJhFoxaU/edit?usp=sharing)  
