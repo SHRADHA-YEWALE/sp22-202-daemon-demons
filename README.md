@@ -26,6 +26,23 @@ Implemented strategy pattern for the jet movement controls, with the different c
 ### Shradha Yewale 
 [Journal](./journals/shradha.md)
 
+## Gameplay Screenshots
+### Title Screen
+![TitleScreen](/JetFighter/Screenshots/TitleScreen.png)
+### Instructions Screen
+![InstructionsScreen](/JetFighter/Screenshots/InstructionsScreen.png)
+### Menu Screen
+![MenuScreen](/JetFighter/Screenshots/MenuScreen.png)
+### User Input
+![UserInputcreen](/JetFighter/Screenshots/UserInput.png)
+## Gameplay Screen
+![GamePlay1](/JetFighter/Screenshots/GamePlay1.png)
+![GamePlay2](/JetFighter/Screenshots/GamePlay2.png)
+## Game Tied
+![Tied](/JetFighter/Screenshots/Tied.png)
+## Winner Screen
+![Winner](/JetFighter/Screenshots/Winner.png)
+
 ## Videos
 
 ## Summary
