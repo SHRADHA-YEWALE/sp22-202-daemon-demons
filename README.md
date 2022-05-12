@@ -1,4 +1,4 @@
-# Daemon Demons
+# Jet Fighter (Team Daemon Demons)
 
 ## Members
 Dylan Nguyen  
@@ -14,6 +14,13 @@ In addition, worked to create an easier means of detecting hits and updating sco
 Implemented strategy pattern for the jet movement controls, with the different control schemes being different strategies.
 ### Puneet Tokhi 
 [Journal](./journals/puneet.md)
+* Worked on implementing the `Menu`, `Instructions`, `Settings` and `GameSettings` screen
+* Implemented the `Explosion` and `Instructions` class and worked on the user interface
+* Used the `Command Pattern` to implement the Menu and Settings screen. Created `Buttons` and `MenuCommand` class and required invoker and receiver interfaces to implement the Command Pattern. All buttons used in the game are in `Buttons` class and the command pattern is used to assign functionality to buttons and labels.
+* Added game assets including the title screen, background music, explosion sound, bullet sounds and the menu navigation sounds
+* Created the `Player` class to get the Player's information from the user when the game is started 
+* Added the `Jet` and `Bullet` speed configurations in the settings screen, fixed score display bug, and updated the `WinnerBanner` class to enhance user experience
+* Worked on the project documentation and class diagrams and helped the team in creating the user story video
 ### Sandesh Gupta 
 [Journal](./journals/sandesh.md)
 ### Shradha Yewale 
