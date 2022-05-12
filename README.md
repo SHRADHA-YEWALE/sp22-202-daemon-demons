@@ -6,25 +6,7 @@ Puneet Tokhi
 Sandesh Gupta  
 Shradha Yewale  
 
-## Journals/Contributions
-### Dylan Nguyen 
-[Journal](./journals/dylan.md)  
-Worked primarily on the jet and the bullet components. This involved movement, shooting, and overall behavior such as bullet fire rate and range. 
-In addition, worked to create an easier means of detecting hits and updating score by generating subclasses of Jet and Bullet.
-Implemented strategy pattern for the jet movement controls, with the different control schemes being different strategies.
-### Puneet Tokhi 
-[Journal](./journals/puneet.md)
-* Worked on implementing the `Menu`, `Instructions`, `Settings` and `GameSettings` screen
-* Implemented the `Explosion` and `Instructions` class and added code to animate the game background to enhance the user experience
-* Used the `Command Pattern` to implement the Menu and Settings screen. Created `Buttons` and `MenuCommand` class and required invoker and receiver interfaces to implement the Command Pattern. All buttons used in the game are in `Buttons` class and the command pattern is used to assign functionality to buttons and labels.
-* Added game assets including the title screen, background music, explosion sound, bullet sounds and the menu navigation sounds
-* Created the `Player` class to get the Player's information from the user when the game is started 
-* Added the `Jet` and `Bullet` speed configurations in the settings screen, fixed score display bug, and updated the `WinnerBanner` class to enhance user experience
-* Worked on the project documentation and class diagrams and helped the team in creating the user story video
-### Sandesh Gupta 
-[Journal](./journals/sandesh.md)
-### Shradha Yewale 
-[Journal](./journals/shradha.md)
+## Summary
 
 ## Gameplay Screenshots
 ### Title Screen
@@ -45,7 +27,8 @@ Implemented strategy pattern for the jet movement controls, with the different c
 
 ## Videos
 
-## Summary
+User Story Video
+Demo Video
 
 ## Key Features
 
@@ -65,7 +48,6 @@ Burndown chart finishes task before final date as the final week devoted to prep
 ![Deployment Diagram](https://user-images.githubusercontent.com/22095857/168148446-4e77f1c9-67ca-4232-8fae-32e1950ad7ca.jpg)
 
 
-
 ## Wireframes
 
 [Wireframes](https://wireframe.cc/pro/pp/02d102965543343)
@@ -78,7 +60,28 @@ Burndown chart finishes task before final date as the final week devoted to prep
 | Game | ![](documentation/wireframes/4-Game-2x.png) |
 | Post Game | ![](documentation/wireframes/5-Post_Game-2x.png) | 
 
+## Journals/Contributions
+### Dylan Nguyen 
+[Journal](./journals/dylan.md)  
+Worked primarily on the jet and the bullet components. This involved movement, shooting, and overall behavior such as bullet fire rate and range. 
+In addition, worked to create an easier means of detecting hits and updating score by generating subclasses of Jet and Bullet.
+Implemented strategy pattern for the jet movement controls, with the different control schemes being different strategies.
 
+### Puneet Tokhi 
+[Journal](./journals/puneet.md)
+* Worked on implementing the `Menu`, `Instructions`, `Settings` and `GameSettings` screen
+* Implemented the `Explosion` and `Instructions` class and added code to animate the game background to enhance the user experience
+* Used the `Command Pattern` to implement the Menu and Settings screen. Created `Buttons` and `MenuCommand` class and required invoker and receiver interfaces to implement the Command Pattern. All buttons used in the game are in `Buttons` class and the command pattern is used to assign functionality to buttons and labels.
+* Added game assets including the title screen, background music, explosion sound, bullet sounds and the menu navigation sounds
+* Created the `Player` class to get the Player's information from the user when the game is started 
+* Added the `Jet` and `Bullet` speed configurations in the settings screen, fixed score display bug, and updated the `WinnerBanner` class to enhance user experience
+* Worked on the project documentation and class diagrams and helped the team in creating the user story video
+
+### Sandesh Gupta 
+[Journal](./journals/sandesh.md)
+
+### Shradha Yewale 
+[Journal](./journals/shradha.md)
 
 
 
