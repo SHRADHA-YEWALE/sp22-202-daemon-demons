@@ -6,12 +6,21 @@ Puneet Tokhi
 Sandesh Gupta  
 Shradha Yewale  
 
+## Summary
+Jet fighter is a local multiplayer jet fighting game. Two players on the same keyboard control their own jet and try to shoot the other jet. The person who 
+hits the other the most wins. Developed using Java and Greenfoot from scratch.
+
+## Videos
+[Demo](https://www.youtube.com/watch?v=pvHbVTa_xeo)
+
 ## Journals/Contributions
 ### Dylan Nguyen 
 [Journal](./journals/dylan.md)  
-Worked primarily on the jet and the bullet components. This involved movement, shooting, and overall behavior such as bullet fire rate and range. 
-In addition, worked to create an easier means of detecting hits and updating score by generating subclasses of Jet and Bullet.
-Implemented strategy pattern for the jet movement controls, with the different control schemes being different strategies.
+* Worked primarily on the `Jet` and the `Bullet` components. This involved movement, shooting, and overall behavior such as bullet fire rate and range. 
+* Made the `Jet` class available to alteration for different settings 
+* Made subclasses `Jet1`, `Jet2`, `Bullet1`, and `Bullet2` to make hit detection and score updates easier.
+* Used `Strategy Pattern` with `IMovementStrategy` to make the different control schemes of arrow keys and WASD.
+* Made Demo video
 ### Puneet Tokhi 
 [Journal](./journals/puneet.md)
 * Worked on implementing the `Menu`, `Instructions`, `Settings` and `GameSettings` screen
@@ -43,16 +52,23 @@ Implemented strategy pattern for the jet movement controls, with the different c
 ## Winner Screen
 ![Winner](/JetFighter/Screenshots/Winner.png)
 
-## Videos
-
-## Summary
-
 ## Key Features
+* Player controlled Jets that turn and shoot
+* A score and timer system that determines the winner of the game
+* Game settings that allows players to change the speed of the bullets and jets
 
 ## Task Sheet & Burndown
 [Task Sheet](https://docs.google.com/spreadsheets/d/1RcyCSWCNy9yeMHt_llLNDZoZeZGewSY5GR5uJhFoxaU/edit?usp=sharing)  
 ![](documentation/Burndown.png)  
 Burndown chart finishes task before final date as the final week devoted to preparing for project submission and demo.
+
+## Design Patterns
+### Strategy
+![](./documentation/diagram/strategy.png)  
+Strategy pattern is implemented in order to handle different control schemes in the same class. In this case, an IMovementStrategy is made that 
+handles moving, turning, and shooting. One strategy is for controllling with the arrow keys while the other is to use the WASD keys to control the jet. 
+The Jet class has methods that define each strategy and picks the correct one depending ont he instantiation. 
+The strategy is then called in the act method to respond to the corresponding button presses.
 
 ## Architecture Diagram
 
