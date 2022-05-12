@@ -50,7 +50,7 @@ hits the other the most wins. Developed using Java and Greenfoot from scratch.
 ![Winner](/JetFighter/Screenshots/Winner.png)
 
 ## Videos
-![Demo](https://www.youtube.com/watch?v=pvHbVTa_xeo)
+[Demo](https://www.youtube.com/watch?v=pvHbVTa_xeo)
 
 ## Key Features
 * Player controlled Jets that turn and shoot
