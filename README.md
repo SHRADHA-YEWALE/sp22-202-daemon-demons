@@ -10,6 +10,9 @@ Shradha Yewale
 Jet fighter is a local multiplayer jet fighting game. Two players on the same keyboard control their own jet and try to shoot the other jet. The person who 
 hits the other the most wins. Developed using Java and Greenfoot from scratch.
 
+## Videos
+[Demo](https://www.youtube.com/watch?v=pvHbVTa_xeo)
+
 ## Journals/Contributions
 ### Dylan Nguyen 
 [Journal](./journals/dylan.md)  
@@ -48,9 +51,6 @@ hits the other the most wins. Developed using Java and Greenfoot from scratch.
 ![Tied](/JetFighter/Screenshots/Tied.png)
 ## Winner Screen
 ![Winner](/JetFighter/Screenshots/Winner.png)
-
-## Videos
-[Demo](https://www.youtube.com/watch?v=pvHbVTa_xeo)
 
 ## Key Features
 * Player controlled Jets that turn and shoot
