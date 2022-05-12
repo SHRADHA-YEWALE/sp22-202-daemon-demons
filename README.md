@@ -51,18 +51,17 @@ The strategy is then called in the act method to respond to the corresponding bu
 
 ## Architecture Diagram
 
-[Lucid chart](https://lucid.app/lucidchart/8a2b83f8-d4c5-4b58-b0b7-eb1032640ead/edit?invitationId=inv_16fc3e19-db7b-4333-bfc4-c52e307b5293)
-
 ![](documentation/diagram/Architecture_diagram.png)
 
 ## Deployment Diagram
 
 ![Deployment Diagram](https://user-images.githubusercontent.com/22095857/168148446-4e77f1c9-67ca-4232-8fae-32e1950ad7ca.jpg)
 
+## Class Diagram
+
+![Class Diagram](documentation/diagram/Class_Diagram.png)
 
 ## Wireframes
-
-[Wireframes](https://wireframe.cc/pro/pp/02d102965543343)
 
 | Screen  | Wireframe |
 | ------------- | ------------- |
