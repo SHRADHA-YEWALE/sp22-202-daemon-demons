@@ -1,4 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import java.lang.String;
+import java.util.Random;
 
 /**
  * Write a description of class GameScreen here.
@@ -12,8 +14,12 @@ public class GameScreen extends World
     private JetTwoScoreDisplay jetTwoScoreDisplay;
     
     private int imageCount = 0;
+
+    public int oldRandom = 0;
+    String[] backgroundImages = {"cloud_white.png","cloudbackground1.jpeg", "cloud_red.jpeg"};
+    int random = getRandom(backgroundImages);
     
-    GreenfootImage background = new GreenfootImage("cloudbackground1.jpeg");
+    GreenfootImage background = new GreenfootImage(backgroundImages[random]);
     /**
      * Constructor for objects of class GameScreen.
      * 
@@ -55,4 +61,15 @@ public class GameScreen extends World
         getBackground().drawImage(image, temp, 0);
         getBackground().drawImage(image, temp + image.getWidth(), 0);
     }
+    
+    public int getRandom(String[] arr){
+        Random random = new Random();
+        int num = random.nextInt(arr.length);
+        while(num == oldRandom){
+            num = random.nextInt(arr.length);
+        }
+        oldRandom = num;
+        return num;
+    }
+
 }
