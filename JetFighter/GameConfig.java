@@ -12,4 +12,4 @@ public class GameConfig
     public static int jetSpeed =  4;
     public static int gameDuration = 30;
     public static int timeToStartBlinking = 10;
-}
+ }

@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Label
+comment0.text=\n\ Write\ a\ description\ of\ class\ Label\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=Label()
+comment2.params=text
+comment2.target=Label(java.lang.String)
+comment3.params=text
+comment3.target=void\ setText(java.lang.String)
+comment4.params=text
+comment4.target=void\ updateImage(java.lang.String)
+numComments=5

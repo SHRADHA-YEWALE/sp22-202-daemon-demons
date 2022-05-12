@@ -10,6 +10,12 @@ public class GameSettingsScreen extends World
 {
     GreenfootImage background = new GreenfootImage("startScreen.jpg");
     private int imageCount = 0;
+    JetIncrementSpeedButton jetIncrButton = new JetIncrementSpeedButton();
+    BulletDecrementSpeedButton bulletDecrButton = new BulletDecrementSpeedButton();
+    Label jetValidationLabel = new Label("Jet speed should be lower than Bullet speed");
+    Label bulletValidationLabel = new Label("Bullet speed should be higher than Jet speed");
+
+    
     /**
      * Constructor for objects of class GameSettingsScreen.
      * 
@@ -31,15 +37,15 @@ public class GameSettingsScreen extends World
         gameLogo.scale(350,350);
         addObject(new Logo(gameLogo), 440, 140);
        
-        addObject(new BulletSpeed(), 200, 420);
-        addObject( new BulletDecrementSpeedButton(), 420, 420);
-        addObject(new BulletSpeedLabel(), 460, 420);
-        addObject(new BulletIncrementSpeedButton(), 510, 420); 
+        addObject(new BulletSpeed(), 210, 420);
+        addObject(bulletDecrButton, 450, 420);
+        addObject(new BulletSpeedLabel(), 480, 420);
+        addObject(new BulletIncrementSpeedButton(), 530, 420); 
         
         addObject(new JetSpeed(),200, 490);
-        addObject( new JetDecrementSpeedButton(), 420, 490);
-        addObject(new JetSpeedLabel(), 460, 490);
-        addObject(new JetIncrementSpeedButton(), 510,490); 
+        addObject( new JetDecrementSpeedButton(), 450, 490);
+        addObject(new JetSpeedLabel(), 480, 490);
+        addObject(jetIncrButton, 530,490); 
         
         Buttons buttons = new Buttons();
         MenuOption back = buttons.getButton("Back");
@@ -49,6 +55,7 @@ public class GameSettingsScreen extends World
     public void act(){
         imageCount -= 4;
         animateImage(background);
+        validateSpeeds();
     }
     
     public void animateImage(GreenfootImage image) {
@@ -58,5 +65,19 @@ public class GameSettingsScreen extends World
         int temp = imageCount;
         getBackground().drawImage(image, temp, 0);
         getBackground().drawImage(image, temp + image.getWidth(), 0);
+    }
+    
+    public void validateSpeeds(){
+        if(!jetIncrButton.getValidateFlag())
+            addObject(jetValidationLabel, 680, 430);
+        else{
+            removeObject(jetValidationLabel);
+        }
+        
+        if(!bulletDecrButton.getValidateFlag())
+            addObject(bulletValidationLabel, 680, 362);
+        else{
+            removeObject(bulletValidationLabel);
+        }
     }
 }
