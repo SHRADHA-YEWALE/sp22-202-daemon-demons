@@ -54,7 +54,7 @@ hits the other the most wins. Developed using Java and Greenfoot from scratch.
 ## Key Features
 * Player controlled Jets that turn and shoot
 * A score and timer system that determines the winner of the game
-* Game settings that allows players to change teh speed of the bullets and jets
+* Game settings that allows players to change the speed of the bullets and jets
 
 ## Task Sheet & Burndown
 [Task Sheet](https://docs.google.com/spreadsheets/d/1RcyCSWCNy9yeMHt_llLNDZoZeZGewSY5GR5uJhFoxaU/edit?usp=sharing)  
