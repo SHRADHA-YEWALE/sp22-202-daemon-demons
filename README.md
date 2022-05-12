@@ -62,6 +62,14 @@ hits the other the most wins. Developed using Java and Greenfoot from scratch.
 ![](documentation/Burndown.png)  
 Burndown chart finishes task before final date as the final week devoted to preparing for project submission and demo.
 
+## Design Patterns
+### Strategy
+![](./documentation/diagram/strategy.png)  
+Strategy pattern is implemented in order to handle different control schemes in the same class. In this case, an IMovementStrategy is made that 
+handles moving, turning, and shooting. One strategy is for controllling with the arrow keys while the other is to use the WASD keys to control the jet. 
+The Jet class has methods that define each strategy and picks the correct one depending ont he instantiation. 
+The strategy is then called in the act method to respond to the corresponding button presses.
+
 ## Architecture Diagram
 
 [Lucid chart](https://lucid.app/lucidchart/8a2b83f8-d4c5-4b58-b0b7-eb1032640ead/edit?invitationId=inv_16fc3e19-db7b-4333-bfc4-c52e307b5293)
