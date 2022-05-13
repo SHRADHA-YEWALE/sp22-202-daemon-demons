@@ -99,6 +99,27 @@ Command Pattern is used to add action listener to any button that is present in 
 ### Sandesh Gupta 
 [Journal](./journals/sandesh.md)
 
+* Worked on creating `Assets`, `Timer`, `Settings` and `Post-game` screen.
+* Assets
+  * Create Jet and Bullet asset. 
+  * Integrated the assets with gameplay.
+* Timer
+  * Implemented the timer logic
+  * Display timer in game
+  * Timer blink when game is about to end
+  * Implemented Timer using Decorator design pattern
+* Settings
+  * Add functionality for increment and decrement of speed in Settings screen
+  * Reflect speed changes in gameplay
+  * Vaidation of speeds: Min, max and Jet speed < Bullet speed
+* Post-game screen
+  * Designed and implemented the post-game screen with the game results.
+* Documentation 
+  * Architecture diagram
+  * Class diagram 
+  * UI wireframes
+  * User strory video
+
 ### Shradha Yewale 
 [Journal](./journals/shradha.md)
 
