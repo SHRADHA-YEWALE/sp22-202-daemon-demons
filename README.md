@@ -59,6 +59,10 @@ The strategy is then called in the act method to respond to the corresponding bu
 ![](./documentation/diagram/CommandPatternDiagram.png)
 Command Pattern is used to add action listener to any button that is present in the game. In our project, the `MenuOption` class implements the `IMenuInvoker` interface so that when the `invoke()` method is called, the `MenuOption` performs some action added in the command that is attached to the button. In this case, we are creating buttons from the `Buttons` class which adds an inline receiver to `IMenuCommand` and attaches the command to the created button. There are two hash maps used in the `Buttons` class, one is for the menu option commands, and the other is for menu option images.
 
+### Observer
+![Observer pattern](https://user-images.githubusercontent.com/22095857/168373519-929adbd3-134a-479b-a6bc-2569ce4f7802.jpg)
+
+
 ## Architecture Diagram
 
 ![](documentation/diagram/Architecture_diagram.png)
