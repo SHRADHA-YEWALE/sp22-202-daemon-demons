@@ -43,6 +43,10 @@ User Story Video
 ![](documentation/Burndown.png)  
 Burndown chart finishes task before final date as the final week devoted to preparing for project submission and demo.
 
+## Project task board
+<img width="1431" alt="image" src="https://user-images.githubusercontent.com/22095857/168347517-529c3854-4f47-412f-b810-c515ad99a5ff.png">
+
+
 ## Design Patterns
 ### Strategy
 ![](./documentation/diagram/strategy.png)  
@@ -122,6 +126,18 @@ Command Pattern is used to add action listener to any button that is present in 
 
 ### Shradha Yewale 
 [Journal](./journals/shradha.md)
+
+* I primarily worked on the Score feature for `Jet1` and `Jet2`.
+* Used an `Observer Pattern` to implement the score feature.
+* Implemented major functionalities such as Detect Hit, Update Score, Display Score and Reset Score in score feature.
+* `Detect Hit` : Detect the hit for `Jet1` with `Bullet2` and `Jet2` with `Bullet1` to notify about the hit to update score.
+* `Update Score` : Once the hit is detected updated the score in JetOneScore and JetTwoScore
+* `Display Score` : `JetOneScoreDisplay` and `JetTwoScoreDisplay` to display the score. worked on display score design and layout on screen.
+* `Reset Score` : Whenever the game is finished and a new game is started the score is resetted to 0.
+* Actively participated in discussions right from game selection, tasks identification, feature distributions, patterns to implemented, scrum meeting and implemented feedback core value.
+* Worked on project documentation of the project. Draw the class diagram for the observer design pattern. Also made a deployment diagram for the project.
+* Contributed in making the user video for Jet fighter.
+
 
 
 
