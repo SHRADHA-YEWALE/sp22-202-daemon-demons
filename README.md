@@ -4,7 +4,7 @@
 Dylan Nguyen  
 Puneet Tokhi  
 Sandesh Gupta  
-Shradha Yewale  
+[Shradha Yewale](https://github.com/SHRADHA-YEWALE)  
 
 ## Summary
 Jet fighter is a local multiplayer jet fighting game. Two players on the same keyboard control their own jet and try to shoot the other jet. The person who 
