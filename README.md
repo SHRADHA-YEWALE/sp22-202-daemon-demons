@@ -51,6 +51,10 @@ handles moving, turning, and shooting. One strategy is for controllling with the
 The Jet class has methods that define each strategy and picks the correct one depending ont he instantiation. 
 The strategy is then called in the act method to respond to the corresponding button presses.
 
+### Command
+![](./documentation/diagram/CommandPatternDiagram.png)
+Command Pattern is used to add action listener to any button that is present in the game. In our project, the `MenuOption` class implements the `IMenuInvoker` interface so that when the `invoke()` method is called, the `MenuOption` performs some action added in the command that is attached to the button. In this case, we are creating buttons from the `Buttons` class which adds an inline receiver to `IMenuCommand` and attaches the command to the created button. There are two hash maps used in the `Buttons` class, one is for the menu option commands, and the other is for menu option images.
+
 ## Architecture Diagram
 
 ![](documentation/diagram/Architecture_diagram.png)
