@@ -1,18 +1,18 @@
 # Jet Fighter (Team Daemon Demons)
 
 ## Members
-Dylan Nguyen  
+[Dylan Nguyen](https://github.com/DylanNguyenGit)  
 Puneet Tokhi  
 Sandesh Gupta  
-Shradha Yewale  
+[Shradha Yewale](https://github.com/SHRADHA-YEWALE)  
 
 ## Summary
 Jet fighter is a local multiplayer jet fighting game. Two players on the same keyboard control their own jet and try to shoot the other jet. The person who 
 hits the other the most wins. Developed using Java and Greenfoot from scratch.
 
 ## Videos
-User Story Video  
-[Demo Video](https://www.youtube.com/watch?v=9OzpEX2Uu2Y)
+* [User Story Video](https://www.youtube.com/watch?v=WlVwUZLluek)  
+* [Demo Video](https://www.youtube.com/watch?v=9OzpEX2Uu2Y)
 
 ## Gameplay Screenshots
 ### Title Screen
@@ -46,6 +46,7 @@ Burndown chart finishes task before final date as the final week devoted to prep
 ## Project task board
 <img width="1431" alt="image" src="https://user-images.githubusercontent.com/22095857/168347517-529c3854-4f47-412f-b810-c515ad99a5ff.png">
 
+![](documentation/TaskBoard2.png)  
 
 ## Design Patterns
 ### Strategy
@@ -58,6 +59,15 @@ The strategy is then called in the act method to respond to the corresponding bu
 ### Command
 ![](./documentation/diagram/CommandPatternDiagram.png)
 Command Pattern is used to add action listener to any button that is present in the game. In our project, the `MenuOption` class implements the `IMenuInvoker` interface so that when the `invoke()` method is called, the `MenuOption` performs some action added in the command that is attached to the button. In this case, we are creating buttons from the `Buttons` class which adds an inline receiver to `IMenuCommand` and attaches the command to the created button. There are two hash maps used in the `Buttons` class, one is for the menu option commands, and the other is for menu option images.
+
+### Observer
+![Observer pattern](https://user-images.githubusercontent.com/22095857/168373519-929adbd3-134a-479b-a6bc-2569ce4f7802.jpg)
+
+Observer pattern is a design pattern in which a subject notifies an object automatically of any state change usually by calling their methods. Here `IDetectSubject` is a subject interface with `notifyObservers()` and `Jet` class(acts as subject) implements it. The `Jet1` and `Jet2` class extends the Jet class to implement the `notifyObservers()`. When the hit is detected, that is when Jet1 hit by Bullet2, jet 2 score is updated and when Jet2 hit by Bullet1, jet 1 score is updated. 
+
+`IUpdateScoreObserver` acts as an object interface. Score (acts as object) which implements `updateScore()` to update the score when there is a detect hit(state change) in `Jet1` and `Jet2`. `JetOneScore` will update the Jet1 score when Jet2 hits by Bullet1 and `JetTwoScore` will update the Jet2 score when Jet1 hits by Bullet2.
+
+
 
 ## Architecture Diagram
 
@@ -82,6 +92,14 @@ Command Pattern is used to add action listener to any button that is present in 
 | Post Game | ![](documentation/wireframes/5-Post_Game-2x.png) | 
 
 ## Journals/Contributions
+
+| Name  | Design Pattern |
+| ------------- | ------------- |
+| Dylan Nguyen  | Strategy |
+| Puneet Tokhi  | Command  |
+| Sandesh Gupta | Decorator|
+| Shradha Yewale | Observer|
+
 ### Dylan Nguyen 
 [Journal](./journals/dylan.md)  
 * Worked primarily on the `Jet` and the `Bullet` components. This involved movement, shooting, and overall behavior such as bullet fire rate and range. 
@@ -103,8 +121,41 @@ Command Pattern is used to add action listener to any button that is present in 
 ### Sandesh Gupta 
 [Journal](./journals/sandesh.md)
 
+* Worked on creating `Assets`, `Timer`, `Settings` and `Post-game` screen.
+* Assets
+  * Create Jet and Bullet asset. 
+  * Integrated the assets with gameplay.
+* Timer
+  * Implemented the timer logic
+  * Display timer in game
+  * Timer blink when game is about to end
+  * Implemented Timer using Decorator design pattern
+* Settings
+  * Add functionality for increment and decrement of speed in Settings screen
+  * Reflect speed changes in gameplay
+  * Vaidation of speeds: Min, max and Jet speed < Bullet speed
+* Post-game screen
+  * Designed and implemented the post-game screen with the game results.
+* Documentation 
+  * Architecture diagram
+  * Class diagram 
+  * UI wireframes
+  * User strory video
+
 ### Shradha Yewale 
 [Journal](./journals/shradha.md)
+
+* I primarily worked on the Score feature for `Jet1` and `Jet2`.
+* Used an `Observer Pattern` to implement the score feature.
+* Implemented major functionalities such as Detect Hit, Update Score, Display Score and Reset Score in score feature.
+* `Detect Hit` : Detect the hit for `Jet1` with `Bullet2` and `Jet2` with `Bullet1` to notify about the hit to update score.
+* `Update Score` : Once the hit is detected updated the score in JetOneScore and JetTwoScore
+* `Display Score` : `JetOneScoreDisplay` and `JetTwoScoreDisplay` to display the score. worked on display score design and layout on screen.
+* `Reset Score` : Whenever the game is finished and a new game is started the score is resetted to 0.
+* Actively participated in discussions right from game selection, tasks identification, feature distributions, patterns to implemented, scrum meeting and implemented feedback core value.
+* Worked on project documentation of the project. Draw the class diagram for the observer design pattern. Also made a deployment diagram for the project.
+* Contributed in making the user video for Jet fighter.
+
 
 
 
