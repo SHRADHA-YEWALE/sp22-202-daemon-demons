@@ -12,7 +12,7 @@ hits the other the most wins. Developed using Java and Greenfoot from scratch.
 
 ## Videos
 User Story Video  
-[Demo Video](https://www.youtube.com/watch?v=pvHbVTa_xeo)
+[Demo Video](https://www.youtube.com/watch?v=9OzpEX2Uu2Y)
 
 ## Gameplay Screenshots
 ### Title Screen
