@@ -46,6 +46,7 @@ Burndown chart finishes task before final date as the final week devoted to prep
 ## Project task board
 <img width="1431" alt="image" src="https://user-images.githubusercontent.com/22095857/168347517-529c3854-4f47-412f-b810-c515ad99a5ff.png">
 
+![](documentation/TaskBoard2.png)  
 
 ## Design Patterns
 ### Strategy
