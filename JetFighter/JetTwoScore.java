@@ -1,9 +1,9 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class JetTwoScore here.
+ * This class will update, get and reset the score for jet2.
  * 
- * @author (your name) 
+ * @author (shradha yewale) 
  * @version (a version number or a date)
  */
 public class JetTwoScore extends ScoreCard
@@ -20,6 +20,10 @@ public class JetTwoScore extends ScoreCard
         super.act();
     }
     
+    /**
+     * This will return JetTwoScore instance. 
+     * It null then will create new one.
+     */
     public static JetTwoScore getScoreInstance() {
         if(jetTwoScore == null) {
             return new JetTwoScore();
@@ -27,18 +31,30 @@ public class JetTwoScore extends ScoreCard
         return jetTwoScore;
     }
     
+    /**
+     * set jet2 score
+     */
     public void setScore() {
         score += 1;
     }
 
+    /**
+     * get score for jet2
+     */
     public int getScore() {
         return score;
     }
     
+    /**
+     * reset score for jet2
+     */
     public void resetScore() {
         score = 0;
     }
     
+    /**
+     * update score for jet2
+     */
     public void updateScore() {
         JetTwoScore.getScoreInstance().setScore();   
     }

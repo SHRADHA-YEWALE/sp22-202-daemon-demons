@@ -1,17 +1,22 @@
 #BlueJ class context
 comment0.target=JetTwoScore
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ JetTwoScore\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\n\ This\ class\ will\ update,\ get\ and\ reset\ the\ score\ for\ jet2.\n\ \n\ @author\ (shradha\ yewale)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=
 comment1.target=void\ act()
-comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ JetOneScore\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment1.text=\n\ Act\ -\ do\ whatever\ the\ JetOneScore\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
 comment2.params=
 comment2.target=JetTwoScore\ getScoreInstance()
+comment2.text=\n\ This\ will\ return\ JetTwoScore\ instance.\ \n\ It\ null\ then\ will\ create\ new\ one.\n
 comment3.params=
 comment3.target=void\ setScore()
+comment3.text=\n\ set\ jet2\ score\n
 comment4.params=
 comment4.target=int\ getScore()
+comment4.text=\n\ get\ score\ for\ jet2\n
 comment5.params=
 comment5.target=void\ resetScore()
+comment5.text=\n\ reset\ score\ for\ jet2\n
 comment6.params=
 comment6.target=void\ updateScore()
+comment6.text=\n\ update\ score\ for\ jet2\n
 numComments=7

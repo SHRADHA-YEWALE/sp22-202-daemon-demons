@@ -1,17 +1,21 @@
 #BlueJ class context
 comment0.target=JetOneScoreDisplay
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ JetOneScoreDisplay\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\n\ JetOneScoreDisplay\ will\ display\ score\ for\ jet1.\n\ \n\ @author\ (Shradha\ Yewale)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=
 comment1.target=void\ act()
-comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ JetOneScoreDisplay\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment1.text=\n\ Act\ -\ do\ whatever\ the\ JetOneScoreDisplay\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
 comment2.params=
 comment2.target=JetOneScoreDisplay\ getInstance()
+comment2.text=\n\ This\ will\ return\ JetOneScoreDisplay\ instance.\ \n\ It\ null\ then\ will\ create\ new\ one.\n
 comment3.params=
 comment3.target=JetOneScoreDisplay()
 comment4.params=score
 comment4.target=JetOneScoreDisplay(int)
+comment4.text=\n\ JetOneScoreDisplay\ constructor.\n
 comment5.params=score
 comment5.target=void\ displayScore(int)
+comment5.text=\n\ display\ score\ for\ jet1\n
 comment6.params=
 comment6.target=void\ updateScoreDisplay()
+comment6.text=\n\ update\ score\ for\ jet1\n
 numComments=7
