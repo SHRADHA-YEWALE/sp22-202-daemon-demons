@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class ScoreCard here.
+ * ScoreCard observer will update the jet scores
  * 
  * @author (shradha yewale) 
  * @version (a version number or a date)

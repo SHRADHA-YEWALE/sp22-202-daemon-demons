@@ -1,9 +1,9 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class JetTwoScoreDisplay here.
+ * JetTwoScoreDisplay will display score for jet1.
  * 
- * @author (your name) 
+ * @author (Shradha Yewale) 
  * @version (a version number or a date)
  */
 public class JetTwoScoreDisplay extends Actor
@@ -24,6 +24,10 @@ public class JetTwoScoreDisplay extends Actor
 
     }
     
+    /**
+     * This will return JetTwoScoreDisplay instance. 
+     * It null then will create new one.
+     */
     public static JetTwoScoreDisplay getInstance() {
         if (jetTwoScoreDisplayInstance == null) {
             jetTwoScoreDisplayInstance = new JetTwoScoreDisplay(JetTwoScore.getScoreInstance().getScore());
@@ -31,6 +35,9 @@ public class JetTwoScoreDisplay extends Actor
         return jetTwoScoreDisplayInstance;
     }
     
+    /**
+     * JetTwoScoreDisplay constructor.
+     */
     public JetTwoScoreDisplay(int score) {
         backgroundImage = getImage();
         displayScore(score);
@@ -38,11 +45,17 @@ public class JetTwoScoreDisplay extends Actor
     
     public JetTwoScoreDisplay() {}
     
+    /**
+     * display score for jet2
+     */
     public void displayScore(int score) {
         jetTwoScoreText = new GreenfootImage(" " + score, 65, Color.WHITE, transparent);
         setImage(jetTwoScoreText);
     }
     
+    /**
+     * update score for jet2
+     */
     public void updateScoreDisplay() {
         displayScore(JetTwoScore.getScoreInstance().getScore());
     }
