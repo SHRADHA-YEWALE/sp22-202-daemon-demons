@@ -1,7 +1,7 @@
 /**
- * Write a description of class IMenuReceiver here.
+ * Menu Receiver Interface for the Command pattern
  * 
- * @author (your name) 
+ * @author (Puneet Tokhi) 
  * @version (a version number or a date)
  */
 public interface IMenuReceiver

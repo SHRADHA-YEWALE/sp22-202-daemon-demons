@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Buttons
-comment0.text=\n\ Write\ a\ description\ of\ class\ Buttons\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ Buttons\ class\ is\ used\ to\ create\ the\ buttons\ for\ the\ game's\ menu\n\ \n\ @author\ (Puneet\ Tokhi)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=
 comment1.target=Buttons()
 comment10.params=
@@ -9,6 +9,7 @@ comment11.params=
 comment11.target=greenfoot.GreenfootImage\ getQuit()
 comment12.params=buttonType
 comment12.target=MenuOption\ getButton(java.lang.String)
+comment12.text=\n\ Returns\ a\ MenuOption\ object\ and\ renders\ the\ button\ image\ on\ screen\n\ @param\ buttonType\ the\ menu\ option\ from\ the\ options\ hashmap\n
 comment2.params=
 comment2.target=void\ doAction()
 comment3.params=
@@ -21,6 +22,7 @@ comment6.params=
 comment6.target=void\ doAction()
 comment7.params=
 comment7.target=greenfoot.GreenfootImage\ getPlay()
+comment7.text=\n\ Returns\ a\ GreenfootImage\ of\ a\ particular\ menu\ option\n
 comment8.params=
 comment8.target=greenfoot.GreenfootImage\ getInstructions()
 comment9.params=

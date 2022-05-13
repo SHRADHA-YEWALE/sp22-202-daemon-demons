@@ -1,9 +1,9 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
 
 /**
- * Write a description of class InstructionsScreen here.
+ * Instructions class to guide users how to play the game
  * 
- * @author (your name) 
+ * @author (Puneet Tokhi) 
  * @version (a version number or a date)
  */
 public class InstructionsScreen extends World
@@ -17,7 +17,6 @@ public class InstructionsScreen extends World
      */
     public InstructionsScreen()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(900, 650, 1); 
         prepare();
     }
@@ -50,6 +49,9 @@ public class InstructionsScreen extends World
         animateImage(background);
     }
     
+     /**
+      * Create a dynamic moving background
+      */
     public void animateImage(GreenfootImage image) {
         if (imageCount <  -image.getWidth()) {
             imageCount += image.getWidth();

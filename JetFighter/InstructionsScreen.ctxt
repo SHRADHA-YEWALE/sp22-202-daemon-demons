@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=InstructionsScreen
-comment0.text=\n\ Write\ a\ description\ of\ class\ InstructionsScreen\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ Instructions\ class\ to\ guide\ users\ how\ to\ play\ the\ game\n\ \n\ @author\ (Puneet\ Tokhi)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=
 comment1.target=InstructionsScreen()
 comment1.text=\n\ Constructor\ for\ objects\ of\ class\ InstructionsScreen.\n\ \n
@@ -10,4 +10,5 @@ comment3.params=
 comment3.target=void\ act()
 comment4.params=image
 comment4.target=void\ animateImage(greenfoot.GreenfootImage)
+comment4.text=\n\ Create\ a\ dynamic\ moving\ background\n
 numComments=5
