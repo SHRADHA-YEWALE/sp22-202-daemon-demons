@@ -86,6 +86,14 @@ Command Pattern is used to add action listener to any button that is present in 
 | Post Game | ![](documentation/wireframes/5-Post_Game-2x.png) | 
 
 ## Journals/Contributions
+
+| Name  | Design Pattern |
+| ------------- | ------------- |
+| Dylan Nguyen  | Strategy |
+| Puneet Tokhi  | Command  |
+| Sandesh Gupta | Decorator|
+| Shradha Yewale | Observer|
+
 ### Dylan Nguyen 
 [Journal](./journals/dylan.md)  
 * Worked primarily on the `Jet` and the `Bullet` components. This involved movement, shooting, and overall behavior such as bullet fire rate and range. 
