@@ -25,7 +25,9 @@ User Story Video
 ![UserInputcreen](/JetFighter/Screenshots/UserInput.png)
 ## Gameplay Screen
 ![GamePlay1](/JetFighter/Screenshots/GamePlay1.png)
+![GamePlay1](/JetFighter/Screenshots/GamePlay3.png)
 ![GamePlay2](/JetFighter/Screenshots/GamePlay2.png)
+![GamePlay1](/JetFighter/Screenshots/GamePlay4.png)
 ## Game Tied
 ![Tied](/JetFighter/Screenshots/Tied.png)
 ## Winner Screen
