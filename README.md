@@ -1,7 +1,7 @@
 # Jet Fighter (Team Daemon Demons)
 
 ## Members
-Dylan Nguyen  
+[Dylan Nguyen](https://github.com/DylanNguyenGit)  
 Puneet Tokhi  
 Sandesh Gupta  
 [Shradha Yewale](https://github.com/SHRADHA-YEWALE)  
