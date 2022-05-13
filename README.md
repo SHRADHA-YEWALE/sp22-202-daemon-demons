@@ -11,8 +11,8 @@ Jet fighter is a local multiplayer jet fighting game. Two players on the same ke
 hits the other the most wins. Developed using Java and Greenfoot from scratch.
 
 ## Videos
-User Story Video  
-[Demo Video](https://www.youtube.com/watch?v=9OzpEX2Uu2Y)
+* [User Story Video](https://www.youtube.com/watch?v=WlVwUZLluek)  
+* [Demo Video](https://www.youtube.com/watch?v=9OzpEX2Uu2Y)
 
 ## Gameplay Screenshots
 ### Title Screen
