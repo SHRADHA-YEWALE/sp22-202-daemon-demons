@@ -1,9 +1,9 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*; 
 
 /**
- * Write a description of class GameSettingsOptions here.
+ * Class to display the GameSettings screen
  * 
- * @author (your name) 
+ * @author (Puneet Tokhi) 
  * @version (a version number or a date)
  */
 public class GameSettingsOptions extends Actor
@@ -12,7 +12,9 @@ public class GameSettingsOptions extends Actor
     private boolean mouseOver = false;
     private static int MAX_TRANSPARENCY = 255; 
     
-        // create a hover animation
+    /** 
+     * Create a hover animation
+     */
     public void checkMouse(){
         if(Greenfoot.mouseMoved(null)){  
             mouseOver = Greenfoot.mouseMoved(this);    

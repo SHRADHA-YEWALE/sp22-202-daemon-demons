@@ -1,10 +1,10 @@
 #BlueJ class context
 comment0.target=MenuCommand
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ MenuCommand\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\n\ Menu\ Command\ class\n\ \n\ @author\ (Puneet\ Tokhi)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=
 comment1.target=void\ execute()
 comment1.text=Execute\ Command
 comment2.params=t
 comment2.target=void\ setReceiver(IMenuReceiver)
-comment2.text=\r\n\ Set\ Receiver\ of\ Command\r\n\ @param\ t\ Target\ Receiver\r\n
+comment2.text=\n\ Set\ Receiver\ of\ Command\n\ @param\ t\ Target\ IMenuReceiver\n
 numComments=3

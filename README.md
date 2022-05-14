@@ -1,18 +1,25 @@
 # Jet Fighter (Team Daemon Demons)
 
 ## Members
-Dylan Nguyen  
-Puneet Tokhi  
-Sandesh Gupta  
-Shradha Yewale  
+| Name          |  XP Core Value  |
+| ------------- | --------------- |
+| [Dylan Nguyen](https://github.com/DylanNguyenGit)    |   Respect       |
+| [Puneet Tokhi](https://github.com/puneettokhi)       |   Communication     |
+| [Sandesh Gupta](https://github.com/sandeshgupta)     |   Courage  |
+| [Shradha Yewale](https://github.com/SHRADHA-YEWALE)    |   Feedback        |
+ 
 
 ## Summary
-Jet fighter is a local multiplayer jet fighting game. Two players on the same keyboard control their own jet and try to shoot the other jet. The person who 
-hits the other the most wins. Developed using Java and Greenfoot from scratch.
+Jet fighter is a local multiplayer interactive Jet fighting game which takes us back to the 90s. Two players on the same keyboard control their own Jet and try to shoot bullets at the other jet. One person controls and maneuvers the Jet using the W, A, S, D keys while the other person uses the Arrow keys. Player 1 shoots the bullet using the `W` key while Player 2 shoots the bullet using the `Up` arrow key. The player who hits the maximum number of bullets within the specified time  wins the game. The game is developed using Java and Greenfoot from scratch.
+
+### Instructions to run the project
+* Install [Greenfoot](https://www.greenfoot.org/download)
+* Clone the [repository](https://github.com/nguyensjsu/sp22-202-daemon-demons)
+* Run `project.greenfoot` inside the `JetFighter` folder
 
 ## Videos
-User Story Video  
-[Demo Video](https://www.youtube.com/watch?v=9OzpEX2Uu2Y)
+* [User Story Video](https://www.youtube.com/watch?v=WlVwUZLluek)  
+* [Demo Video](https://www.youtube.com/watch?v=9OzpEX2Uu2Y)
 
 ## Gameplay Screenshots
 ### Title Screen
@@ -63,6 +70,11 @@ Command Pattern is used to add action listener to any button that is present in 
 ### Observer
 ![Observer pattern](https://user-images.githubusercontent.com/22095857/168373519-929adbd3-134a-479b-a6bc-2569ce4f7802.jpg)
 
+Observer pattern is a design pattern in which a subject notifies an object automatically of any state change usually by calling their methods. Here `IDetectSubject` is a subject interface with `notifyObservers()` and `Jet` class(acts as subject) implements it. The `Jet1` and `Jet2` class extends the Jet class to implement the `notifyObservers()`. When the hit is detected, that is when Jet1 hit by Bullet2, jet 2 score is updated and when Jet2 hit by Bullet1, jet 1 score is updated. 
+
+`IUpdateScoreObserver` acts as an object interface. Score (acts as object) which implements `updateScore()` to update the score when there is a detect hit(state change) in `Jet1` and `Jet2`. `JetOneScore` will update the Jet1 score when Jet2 hits by Bullet1 and `JetTwoScore` will update the Jet2 score when Jet1 hits by Bullet2.
+
+
 
 ## Architecture Diagram
 
@@ -105,13 +117,14 @@ Command Pattern is used to add action listener to any button that is present in 
 
 ### Puneet Tokhi 
 [Journal](./journals/puneet.md)
-* Worked on implementing the `Menu`, `Instructions`, `Settings` and `GameSettings` screen
-* Implemented the `Explosion` and `Instructions` class and added code to animate the game background to enhance the user experience
-* Used the `Command Pattern` to implement the Menu and Settings screen. Created `Buttons` and `MenuCommand` class and required invoker and receiver interfaces to implement the Command Pattern. All buttons used in the game are in `Buttons` class and the command pattern is used to assign functionality to buttons and labels.
-* Added game assets including the title screen, background music, explosion sound, bullet sounds and the menu navigation sounds
+* Worked on implementing the `Title`, `Menu`, `Instructions`, `Settings` and `GameSettings` screen
+* Implemented the `Explosion`, `Logo` and `Instructions` class and added code to animate the game background to provide a dynamic background effect
+* Used the `Command Pattern` to implement the `Menu` and `Settings` screen. Created `Buttons` and `MenuCommand` class and required invoker and receiver interfaces to implement the Command Pattern. All buttons used in the game are in `Buttons` class and the command pattern is used to assign functionality to buttons and labels.
+* Added game assets including the title screen, background music, explosion sound, bullet sounds and the menu navigation sounds and also designed the game's logo
 * Created the `Player` class to get the Player's information from the user when the game is started 
 * Added the `Jet` and `Bullet` speed configurations in the settings screen, fixed score display bug, and updated the `WinnerBanner` class to enhance user experience
-* Worked on the project documentation and class diagrams and helped the team in creating the user story video
+* Worked on the project documentation and class diagrams and added code for the game's `Title` screen
+* Helped the team with the user story video ideas and assisted in editing and creating the video montage
 
 ### Sandesh Gupta 
 [Journal](./journals/sandesh.md)
@@ -150,7 +163,5 @@ Command Pattern is used to add action listener to any button that is present in 
 * Actively participated in discussions right from game selection, tasks identification, feature distributions, patterns to implemented, scrum meeting and implemented feedback core value.
 * Worked on project documentation of the project. Draw the class diagram for the observer design pattern. Also made a deployment diagram for the project.
 * Contributed in making the user video for Jet fighter.
-
-
 
 

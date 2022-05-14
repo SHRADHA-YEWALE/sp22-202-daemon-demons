@@ -1,7 +1,7 @@
 /**
- * Write a description of class MenuCommand here.
+ * Menu Command class
  * 
- * @author (your name) 
+ * @author (Puneet Tokhi) 
  * @version (a version number or a date)
  */
 public class MenuCommand implements IMenuCommand
@@ -16,7 +16,7 @@ public class MenuCommand implements IMenuCommand
     
     /**
      * Set Receiver of Command
-     * @param t Target Receiver
+     * @param t Target IMenuReceiver
      */
     public void setReceiver( IMenuReceiver t ) 
     {

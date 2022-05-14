@@ -1,9 +1,9 @@
 import java.util.HashMap;
 import greenfoot.*;
 /**
- * Write a description of class Buttons here.
+ * Buttons class is used to create the buttons for the game's menu
  * 
- * @author (your name) 
+ * @author (Puneet Tokhi) 
  * @version (a version number or a date)
  */
 public class Buttons 
@@ -76,6 +76,9 @@ public class Buttons
             optionsCommandMap.put("Quit", quitCommand);
         }
 
+        /**
+         * Returns a GreenfootImage of a particular menu option
+         */
         public GreenfootImage getPlay(){
             GreenfootImage playButton =  new GreenfootImage(100,60);
             Font adjustedFont = new Font(true, false, 30);
@@ -121,6 +124,10 @@ public class Buttons
             return quitButton;
         }
 
+        /**
+         * Returns a MenuOption object and renders the button image on screen
+         * @param buttonType the menu option from the options hashmap
+         */
         public MenuOption getButton(String buttonType) {
             GreenfootImage image = optionsImageMap.get(buttonType);
             IMenuCommand cmd = optionsCommandMap.get(buttonType);

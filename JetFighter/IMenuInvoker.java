@@ -1,14 +1,14 @@
 /**
- * Write a description of class IMenuInvoker here.
+ * Menu Invoker Interface for the Command pattern
  * 
- * @author (your name) 
+ * @author (Puneet Tokhi)
  * @version (a version number or a date)
  */
 public interface IMenuInvoker
 {
     /**
      * Set Command for Invoker
-     * @param c Command Object
+     * @param c IMenuCommand Object
      */
     void setCommand( IMenuCommand c ) ;
 

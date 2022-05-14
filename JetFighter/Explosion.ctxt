@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Explosion
-comment0.text=\n\ Write\ a\ description\ of\ class\ Explosion\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ Explosion\ class\ to\ animate\ explosion\ when\ bullet\ is\ shot\n\ \n\ @author\ (Puneet\ Tokhi)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=
 comment1.target=Explosion()
 comment2.params=

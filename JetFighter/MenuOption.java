@@ -1,9 +1,9 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class MenuOption here.
+ * MenuOption class renders a button with the image passed in the constructor.
  * 
- * @author (your name) 
+ * @author (Puneet Tokhi) 
  * @version (a version number or a date)
  */
 public class MenuOption extends Actor implements IMenuInvoker 
@@ -20,11 +20,12 @@ public class MenuOption extends Actor implements IMenuInvoker
 
     /**
      * Set Command for Menu Option
-     * @param c [description]
+     * @param c IMenuCommand object
      */ 
     public void setCommand( IMenuCommand c ) {
         cmd = c ;
     }
+    
     /** Invoke Menu Option */
     public void invoke() 
     {
@@ -33,16 +34,14 @@ public class MenuOption extends Actor implements IMenuInvoker
      public void act() 
     {
         checkMouse();  // to animate the button
-        
         if(Greenfoot.mouseClicked(this)){
             invoke();
         }
     }    
     
-    public void click(){
-    }
-  
-    // create a hover animation
+    /** 
+     * To create hover animation
+     */
     public void checkMouse(){
         if(Greenfoot.mouseMoved(null)){  // if mouse moved over none of the objects
             mouseOver = Greenfoot.mouseMoved(this);    // value is true if mouse is over this object
@@ -56,6 +55,10 @@ public class MenuOption extends Actor implements IMenuInvoker
         }
     }
     
+    /** 
+     * Method to adjust menu button transparency
+     * @param int adjustmentFactor
+     */
     public void adjustButtonTransparency(int adjustmentFactor){
         GreenfootImage tempImg = getImage();
         tempImg.setTransparency(adjustmentFactor);

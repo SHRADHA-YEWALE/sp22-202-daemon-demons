@@ -14,11 +14,13 @@ public class GameScreen extends World
     private JetTwoScoreDisplay jetTwoScoreDisplay;
     
     private int imageCount = 0;
-
-    public int oldRandom = 0;
+    public int oldRandom = 0;  // keep track of previous random number
+    
+    // Creating an array of images
     String[] backgroundImages = {"cloud_white.png","cloudbackground1.jpeg", "cloud_red.jpeg"};
     int random = getRandom(backgroundImages);
     
+    // Selects a random image and sets it as the background 
     GreenfootImage background = new GreenfootImage(backgroundImages[random]);
     /**
      * Constructor for objects of class GameScreen.
@@ -53,6 +55,9 @@ public class GameScreen extends World
         animateImage(background);
     }
     
+     /**
+      * Create a dynamic moving background
+      */
     public void animateImage(GreenfootImage image) {
         if (imageCount <  -image.getWidth()) {
             imageCount += image.getWidth();
@@ -61,7 +66,10 @@ public class GameScreen extends World
         getBackground().drawImage(image, temp, 0);
         getBackground().drawImage(image, temp + image.getWidth(), 0);
     }
-    
+     /**
+      * Returns a random from 0 to the length of array
+      * @param arr The array of image strings
+      */
     public int getRandom(String[] arr){
         Random random = new Random();
         int num = random.nextInt(arr.length);

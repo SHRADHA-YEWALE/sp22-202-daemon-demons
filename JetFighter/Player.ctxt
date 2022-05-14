@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Player
-comment0.text=\n\ Write\ a\ description\ of\ class\ Player\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ Player\ class\ to\ get\ user\ input\ and\ display\ Player\ name\n\ \n\ @author\ (Puneet\ Tokhi)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=
 comment1.target=java.lang.String\ getPlayer1Name()
 comment2.params=
