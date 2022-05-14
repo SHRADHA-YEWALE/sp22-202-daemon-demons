@@ -74,7 +74,15 @@ Observer pattern is a design pattern in which a subject notifies an object autom
 
 `IUpdateScoreObserver` acts as an object interface. Score (acts as object) which implements `updateScore()` to update the score when there is a detect hit(state change) in `Jet1` and `Jet2`. `JetOneScore` will update the Jet1 score when Jet2 hits by Bullet1 and `JetTwoScore` will update the Jet2 score when Jet1 hits by Bullet2.
 
+### Decorator
+![](documentation/diagram/Decorator_pattern.png)
 
+* `Decorator` pattern is used to display the timer on the game screen.  
+* `Timer` class implements the logic to run timer that updates the time every second.
+* `TimerDecorator` defines the structure for decorators and implements _Actor_ class.
+It has default method `act()` for displaying the time. 
+* `TimerDisplayDecorator` implements the functionality that converts the time in `MM:ss` format. It also formats the timer text fonts and color for display. 
+* `TimerBlinkDecorator` implements the functionality that blinks the timer text as the game nears completion. The time at which the timer starts blinking can be configured in `GameConfig` class.
 
 ## Architecture Diagram
 
