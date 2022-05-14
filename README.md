@@ -47,7 +47,8 @@ Jet fighter is a local multiplayer interactive Jet fighting game which takes us 
 
 ## Task Sheet & Burndown
 [Task Sheet](https://docs.google.com/spreadsheets/d/1RcyCSWCNy9yeMHt_llLNDZoZeZGewSY5GR5uJhFoxaU/edit?usp=sharing)  
-![](documentation/Burndown.png)  
+<img width="1018" alt="image" src="https://user-images.githubusercontent.com/22095857/168441819-7ea4e678-24ea-4f6b-bec9-ed2bbec100ac.png">
+
 Burndown chart finishes task before final date as the final week devoted to preparing for project submission and demo.
 
 ## Project task board
