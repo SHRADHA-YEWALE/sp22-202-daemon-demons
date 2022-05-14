@@ -11,5 +11,4 @@ comment3.params=
 comment3.target=void\ act()
 comment4.params=image
 comment4.target=void\ animateImage(greenfoot.GreenfootImage)
-comment4.text=\n\ Create\ a\ dynamic\ moving\ background\n
 numComments=5
