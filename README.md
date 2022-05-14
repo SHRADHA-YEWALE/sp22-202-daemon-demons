@@ -2,8 +2,8 @@
 
 ## Members
 [Dylan Nguyen](https://github.com/DylanNguyenGit)  
-Puneet Tokhi  
-Sandesh Gupta  
+[Puneet Tokhi](https://github.com/puneettokhi)   
+[Sandesh Gupta](https://github.com/sandeshgupta)  
 [Shradha Yewale](https://github.com/SHRADHA-YEWALE)  
 
 ## Summary
@@ -61,8 +61,7 @@ The strategy is then called in the act method to respond to the corresponding bu
 Command Pattern is used to add action listener to any button that is present in the game. In our project, the `MenuOption` class implements the `IMenuInvoker` interface so that when the `invoke()` method is called, the `MenuOption` performs some action added in the command that is attached to the button. In this case, we are creating buttons from the `Buttons` class which adds an inline receiver to `IMenuCommand` and attaches the command to the created button. There are two hash maps used in the `Buttons` class, one is for the menu option commands, and the other is for menu option images.
 
 ### Observer
-
-![Observer pattern](https://user-images.githubusercontent.com/22095857/168407503-b302f0e4-959a-40e1-bf6d-6c476cf36ccf.jpg)
+![Observer pattern](https://user-images.githubusercontent.com/22095857/168373519-929adbd3-134a-479b-a6bc-2569ce4f7802.jpg)
 
 Observer pattern is a design pattern in which a subject notifies an object automatically of any state change usually by calling their methods. Here `IDetectSubject` is a subject interface with `notifyObservers()` and `Jet` class(acts as subject) implements it. The `Jet1` and `Jet2` class extends the Jet class to implement the `notifyObservers()`. When the hit is detected, that is when Jet1 hit by Bullet2, jet 2 score is updated and when Jet2 hit by Bullet1, jet 1 score is updated. 
 
@@ -112,12 +111,13 @@ Observer pattern is a design pattern in which a subject notifies an object autom
 ### Puneet Tokhi 
 [Journal](./journals/puneet.md)
 * Worked on implementing the `Menu`, `Instructions`, `Settings` and `GameSettings` screen
-* Implemented the `Explosion` and `Instructions` class and added code to animate the game background to enhance the user experience
-* Used the `Command Pattern` to implement the Menu and Settings screen. Created `Buttons` and `MenuCommand` class and required invoker and receiver interfaces to implement the Command Pattern. All buttons used in the game are in `Buttons` class and the command pattern is used to assign functionality to buttons and labels.
+* Implemented the `Explosion` and `Instructions` class and added code to animate the game background to provide a dynamic background effect
+* Used the `Command Pattern` to implement the `Menu` and `Settings` screen. Created `Buttons` and `MenuCommand` class and required invoker and receiver interfaces to implement the Command Pattern. All buttons used in the game are in `Buttons` class and the command pattern is used to assign functionality to buttons and labels.
 * Added game assets including the title screen, background music, explosion sound, bullet sounds and the menu navigation sounds
 * Created the `Player` class to get the Player's information from the user when the game is started 
 * Added the `Jet` and `Bullet` speed configurations in the settings screen, fixed score display bug, and updated the `WinnerBanner` class to enhance user experience
-* Worked on the project documentation and class diagrams and helped the team in creating the user story video
+* Worked on the project documentation and class diagrams and added code for the game's `Title` screen
+* Helped the team with the user story video ideas and assisted in editing and creating the video montage
 
 ### Sandesh Gupta 
 [Journal](./journals/sandesh.md)
