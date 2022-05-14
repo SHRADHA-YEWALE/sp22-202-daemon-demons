@@ -169,8 +169,9 @@ It has default method `act()` for displaying the time.
 * `Update Score` : Once the hit is detected updated the score in JetOneScore and JetTwoScore
 * `Display Score` : `JetOneScoreDisplay` and `JetTwoScoreDisplay` to display the score. worked on display score design and layout on screen.
 * `Reset Score` : Whenever the game is finished and a new game is started the score is resetted to 0.
+* Implemented Singleton design pattern for `JetOneScore`, `JetTwoScore`, `JetOneScoreDisplay` and `JetTwoScoreDisplay`.
 * Actively participated in discussions right from game selection, tasks identification, feature distributions, patterns to implemented, scrum meeting and implemented feedback core value.
 * Worked on project documentation of the project. Draw the class diagram for the observer design pattern. Also made a deployment diagram for the project.
-* Contributed in making the user video for Jet fighter.
+* Contributed in making the user video for Jet fighter, .
 
 
