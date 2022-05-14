@@ -114,7 +114,7 @@ It has default method `act()` for displaying the time.
 | Dylan Nguyen  | Strategy |
 | Puneet Tokhi  | Command  |
 | Sandesh Gupta | Decorator|
-| Shradha Yewale | Observer|
+| Shradha Yewale | Observer, Singleton|
 
 ### Dylan Nguyen 
 [Journal](./journals/dylan.md)  
