@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Jet2 extends Jet implements IDetectHitSubject
+public class Jet2 extends Jet
 {
     public Jet2(int mode) {
         super(mode);
