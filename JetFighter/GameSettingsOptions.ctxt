@@ -1,8 +1,9 @@
 #BlueJ class context
 comment0.target=GameSettingsOptions
-comment0.text=\n\ Write\ a\ description\ of\ class\ GameSettingsOptions\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ Class\ to\ display\ the\ GameSettings\ screen\n\ \n\ @author\ (Puneet\ Tokhi)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=
 comment1.target=void\ checkMouse()
+comment1.text=\ \n\ Create\ a\ hover\ animation\n
 comment2.params=world
 comment2.target=void\ goBack(greenfoot.World)
 comment3.params=adjustmentFactor

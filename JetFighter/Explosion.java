@@ -1,14 +1,15 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;  
 
 /**
- * Write a description of class Explosion here.
+ * Explosion class to animate explosion when bullet is shot
  * 
- * @author (your name) 
+ * @author (Puneet Tokhi) 
  * @version (a version number or a date)
  */
 public class Explosion extends Actor
 {
     private int timer = 5;
+
     public Explosion(){
         GreenfootImage image =  new GreenfootImage(50, 50);
         image.setColor(new Color(255,255,0,180));
@@ -25,7 +26,6 @@ public class Explosion extends Actor
     {
         if (timer > 0){
             timer--;
-            //move(1);
         }
         else{
             getWorld().removeObject(this);

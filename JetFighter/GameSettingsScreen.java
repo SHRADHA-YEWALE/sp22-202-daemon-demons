@@ -15,7 +15,6 @@ public class GameSettingsScreen extends World
     Label jetValidationLabel = new Label("Jet speed should be lower than Bullet speed");
     Label bulletValidationLabel = new Label("Bullet speed should be higher than Jet speed");
 
-    
     /**
      * Constructor for objects of class GameSettingsScreen.
      * 

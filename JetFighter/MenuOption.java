@@ -25,6 +25,7 @@ public class MenuOption extends Actor implements IMenuInvoker
     public void setCommand( IMenuCommand c ) {
         cmd = c ;
     }
+    
     /** Invoke Menu Option */
     public void invoke() 
     {
@@ -33,15 +34,13 @@ public class MenuOption extends Actor implements IMenuInvoker
      public void act() 
     {
         checkMouse();  // to animate the button
-        
         if(Greenfoot.mouseClicked(this)){
             invoke();
         }
     }    
     
     /** 
-     * Method to adjust menu button transparency
-     * @param int adjustmentFactor
+     * To create hover animation
      */
     public void checkMouse(){
         if(Greenfoot.mouseMoved(null)){  // if mouse moved over none of the objects

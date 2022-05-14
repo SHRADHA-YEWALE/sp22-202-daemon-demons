@@ -1,7 +1,7 @@
 /**
- * Write a description of class Player here.
+ * Player class to get user input and display Player name
  * 
- * @author (your name) 
+ * @author (Puneet Tokhi) 
  * @version (a version number or a date)
  */
 public class Player  

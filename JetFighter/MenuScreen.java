@@ -10,6 +10,7 @@ public class MenuScreen extends World
 {
     GreenfootImage background = new GreenfootImage("startScreen.jpg");
     private int imageCount = 0;
+    
     /**
      * Constructor for objects of class PlayScreen.
      * 
@@ -54,6 +55,9 @@ public class MenuScreen extends World
         animateImage(background);
     }
     
+     /**
+      * Create a dynamic moving background
+      */
     public void animateImage(GreenfootImage image) {
         if (imageCount <  -image.getWidth()) {
             imageCount += image.getWidth();
