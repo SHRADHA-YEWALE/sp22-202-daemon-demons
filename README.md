@@ -110,7 +110,7 @@ Observer pattern is a design pattern in which a subject notifies an object autom
 ### Puneet Tokhi 
 [Journal](./journals/puneet.md)
 * Worked on implementing the `Title`, `Menu`, `Instructions`, `Settings` and `GameSettings` screen
-* Implemented the `Explosion`, 'Logo` and `Instructions` class and added code to animate the game background to provide a dynamic background effect
+* Implemented the `Explosion`, `Logo` and `Instructions` class and added code to animate the game background to provide a dynamic background effect
 * Used the `Command Pattern` to implement the `Menu` and `Settings` screen. Created `Buttons` and `MenuCommand` class and required invoker and receiver interfaces to implement the Command Pattern. All buttons used in the game are in `Buttons` class and the command pattern is used to assign functionality to buttons and labels.
 * Added game assets including the title screen, background music, explosion sound, bullet sounds and the menu navigation sounds and also designed the game's logo
 * Created the `Player` class to get the Player's information from the user when the game is started 
