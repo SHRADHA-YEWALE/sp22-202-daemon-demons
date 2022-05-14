@@ -1,13 +1,21 @@
 # Jet Fighter (Team Daemon Demons)
 
 ## Members
-[Dylan Nguyen](https://github.com/DylanNguyenGit)  
-[Puneet Tokhi](https://github.com/puneettokhi)   
-[Sandesh Gupta](https://github.com/sandeshgupta)  
-[Shradha Yewale](https://github.com/SHRADHA-YEWALE)  
+| Name          |  XP Core Value  |
+| ------------- | --------------- |
+| [Dylan Nguyen](https://github.com/DylanNguyenGit)    |   Respect       |
+| [Puneet Tokhi](https://github.com/puneettokhi)       |   Communication     |
+| [Sandesh Gupta](https://github.com/sandeshgupta)     |   Courage  |
+| [Shradha Yewale](https://github.com/SHRADHA-YEWALE)    |   Feedback        |
+ 
 
 ## Summary
-Jet fighter is a local multiplayer jet fighting game. Two players on the same keyboard control their own jet and try to shoot the other jet. The person who hits the other the most wins. Developed using Java and Greenfoot from scratch.
+Jet fighter is a local multiplayer interactive Jet fighting game which takes us back to the 90s. Two players on the same keyboard control their own Jet and try to shoot bullets at the other jet. One person controls and maneuvers the Jet using the W, A, S, D keys while the other person uses the Arrow keys. Player 1 shoots the bullet using the `W` key while Player 2 shoots the bullet using the `Up` arrow key. The player who hits the maximum number of bullets within the specified time  wins the game. The game is developed using Java and Greenfoot from scratch.
+
+### Instructions to run the project
+* Install [Greenfoot](https://www.greenfoot.org/download)
+* Clone the [repository](https://github.com/nguyensjsu/sp22-202-daemon-demons)
+* Run `project.greenfoot` inside the `JetFighter` folder
 
 ## Videos
 * [User Story Video](https://www.youtube.com/watch?v=WlVwUZLluek)  
