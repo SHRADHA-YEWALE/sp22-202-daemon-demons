@@ -71,7 +71,7 @@ Command Pattern is used to add action listener to any button that is present in 
 ### Observer
 ![Observer pattern](https://user-images.githubusercontent.com/22095857/168373519-929adbd3-134a-479b-a6bc-2569ce4f7802.jpg)
 
-Observer pattern is a design pattern in which a subject notifies an object automatically of any state change usually by calling their methods. Here `IDetectSubject` is a subject interface with `notifyObservers()` and `Jet` class(acts as subject) implements it. The `Jet1` and `Jet2` class extends the Jet class to implement the `notifyObservers()`. When the hit is detected, that is when Jet1 hit by Bullet2, jet 2 score is updated and when Jet2 hit by Bullet1, jet 1 score is updated. 
+Observer pattern is a design pattern in which a subject notifies an object automatically of any state change usually by calling their methods. Observer Pattern is used to update and display the players score. Here `IDetectSubject` is a subject interface with `notifyObservers()` and `Jet` class(acts as subject) implements it. The `Jet1` and `Jet2` class extends the Jet class to implement the `notifyObservers()`. When the hit is detected, that is when Jet1 hit by Bullet2, jet 2 score is updated and when Jet2 hit by Bullet1, jet 1 score is updated. 
 
 `IUpdateScoreObserver` acts as an object interface. Score (acts as object) which implements `updateScore()` to update the score when there is a detect hit(state change) in `Jet1` and `Jet2`. `JetOneScore` will update the Jet1 score when Jet2 hits by Bullet1 and `JetTwoScore` will update the Jet2 score when Jet1 hits by Bullet2.
 
