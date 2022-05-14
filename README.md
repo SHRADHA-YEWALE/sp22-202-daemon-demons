@@ -7,8 +7,7 @@
 [Shradha Yewale](https://github.com/SHRADHA-YEWALE)  
 
 ## Summary
-Jet fighter is a local multiplayer jet fighting game. Two players on the same keyboard control their own jet and try to shoot the other jet. The person who 
-hits the other the most wins. Developed using Java and Greenfoot from scratch.
+Jet fighter is a local multiplayer jet fighting game. Two players on the same keyboard control their own jet and try to shoot the other jet. The person who hits the other the most wins. Developed using Java and Greenfoot from scratch.
 
 ## Videos
 * [User Story Video](https://www.youtube.com/watch?v=WlVwUZLluek)  
@@ -110,10 +109,10 @@ Observer pattern is a design pattern in which a subject notifies an object autom
 
 ### Puneet Tokhi 
 [Journal](./journals/puneet.md)
-* Worked on implementing the `Menu`, `Instructions`, `Settings` and `GameSettings` screen
-* Implemented the `Explosion` and `Instructions` class and added code to animate the game background to provide a dynamic background effect
+* Worked on implementing the `Title`, `Menu`, `Instructions`, `Settings` and `GameSettings` screen
+* Implemented the `Explosion`, 'Logo` and `Instructions` class and added code to animate the game background to provide a dynamic background effect
 * Used the `Command Pattern` to implement the `Menu` and `Settings` screen. Created `Buttons` and `MenuCommand` class and required invoker and receiver interfaces to implement the Command Pattern. All buttons used in the game are in `Buttons` class and the command pattern is used to assign functionality to buttons and labels.
-* Added game assets including the title screen, background music, explosion sound, bullet sounds and the menu navigation sounds
+* Added game assets including the title screen, background music, explosion sound, bullet sounds and the menu navigation sounds and also designed the game's logo
 * Created the `Player` class to get the Player's information from the user when the game is started 
 * Added the `Jet` and `Bullet` speed configurations in the settings screen, fixed score display bug, and updated the `WinnerBanner` class to enhance user experience
 * Worked on the project documentation and class diagrams and added code for the game's `Title` screen
@@ -156,7 +155,5 @@ Observer pattern is a design pattern in which a subject notifies an object autom
 * Actively participated in discussions right from game selection, tasks identification, feature distributions, patterns to implemented, scrum meeting and implemented feedback core value.
 * Worked on project documentation of the project. Draw the class diagram for the observer design pattern. Also made a deployment diagram for the project.
 * Contributed in making the user video for Jet fighter.
-
-
 
 
