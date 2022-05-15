@@ -5,7 +5,7 @@
 | ------------- |---------------| --------------- |
 | [Dylan Nguyen](https://github.com/DylanNguyenGit)  | 012615954     |  Respect       |
 | [Puneet Tokhi](https://github.com/puneettokhi)      | 010904400     |  Communication     |
-| [Sandesh Gupta](https://github.com/sandeshgupta)           |      |  Courage  |
+| [Sandesh Gupta](https://github.com/sandeshgupta)           | 015649036     |  Courage  |
 | [Shradha Yewale](https://github.com/SHRADHA-YEWALE)      | 014725503     |  Feedback        |
  
 
