@@ -1,12 +1,12 @@
 # Jet Fighter (Team Daemon Demons)
 
 ## Members
-| Name          |  XP Core Value  |
-| ------------- | --------------- |
-| [Dylan Nguyen](https://github.com/DylanNguyenGit)    |   Respect       |
-| [Puneet Tokhi](https://github.com/puneettokhi)       |   Communication     |
-| [Sandesh Gupta](https://github.com/sandeshgupta)     |   Courage  |
-| [Shradha Yewale](https://github.com/SHRADHA-YEWALE)    |   Feedback        |
+| Name          | Student ID    |  XP Core Value  |
+| ------------- |---------------| --------------- |
+| [Dylan Nguyen](https://github.com/DylanNguyenGit)  | 012615954     |  Respect       |
+| [Puneet Tokhi](https://github.com/puneettokhi)      | 010904400     |  Communication     |
+| [Sandesh Gupta](https://github.com/sandeshgupta)           |      |  Courage  |
+| [Shradha Yewale](https://github.com/SHRADHA-YEWALE)      | 014725503     |  Feedback        |
  
 
 ## Summary
